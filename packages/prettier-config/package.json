@@ -1,0 +1,13 @@
+{
+  "name": "@hyoban/prettier-config",
+  "version": "0.1.0",
+  "description": "hyoban's prettier config",
+  "license": "MIT",
+  "main": "config.js",
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "prettier-plugin-astro": "^0.11.0"
+  }
+}
