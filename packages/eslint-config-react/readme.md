@@ -38,3 +38,20 @@ ni -D eslint @hyoban/eslint-config-react
   "eslint.workingDirectories": ["./packages/web"]
 }
 ```
+
+`tsconfig.json`
+
+```jsonc
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+```

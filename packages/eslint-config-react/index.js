@@ -42,6 +42,11 @@ module.exports = {
     // https://vitejs.dev/guide/features.html#typescript
     "@typescript-eslint/consistent-type-imports": "error",
 
+    // ts config
+    // TypeScript provides noUnusedLocals and noUnusedParameters compiler options
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+
     // tailwind
     "tailwindcss/classnames-order": "off",
     "tailwindcss/no-custom-classname": "warn",
