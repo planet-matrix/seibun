@@ -3,10 +3,10 @@
   "private": true,
   "packageManager": "pnpm@8.6.11",
   "scripts": {
-    "release": "bumpp -r && pnpm -r publish"
+    "release": "bumpp -r && pnpm -r publish --access public"
   },
   "devDependencies": {
     "bumpp": "^9.1.1"
   },
-  "version": "2.0.2"
+  "version": "2.0.3"
 }
