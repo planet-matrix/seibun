@@ -1,0 +1,13 @@
+{
+  "name": "@hyoban/tsconfig",
+  "version": "2.0.1",
+  "description": "hyoban's base TypeScript config",
+  "license": "MIT",
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
