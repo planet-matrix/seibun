@@ -24,8 +24,10 @@ Edit `.vscode/settings.json`
 ```jsonc
 {
   "editor.formatOnSave": true,
-  "prettier.documentSelectors": ["**/*.astro"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // for astro
+  "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   }
