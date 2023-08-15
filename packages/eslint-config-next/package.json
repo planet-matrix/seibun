@@ -1,7 +1,7 @@
 {
-  "name": "@hyoban/eslint-config-react",
+  "name": "@hyoban/eslint-config-next",
   "version": "3.0.3",
-  "description": "hyoban's eslint config for react",
+  "description": "hyoban's eslint config for Next.js",
   "license": "MIT",
   "files": [
     "dist"
@@ -21,16 +21,8 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.3.0",
-    "@typescript-eslint/parser": "6.3.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.33.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "eslint-plugin-tailwindcss": "^3.13.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "@hyoban/eslint-config-react": "workspace:*",
+    "@next/eslint-plugin-next": "^13.4.16"
   },
   "peerDependencies": {
     "eslint": ">= 8",

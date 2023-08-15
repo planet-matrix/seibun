@@ -1,0 +1,11 @@
+{
+  "extends": "./packages/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true
+  },
+  "include": ["./packages/**/*.ts"]
+}

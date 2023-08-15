@@ -1,10 +1,17 @@
-/** @type {import('prettier').Config} */
-module.exports = {
+import type { Config } from "prettier"
+import PrettierPackageJson from "prettier-package-json"
+import PrettierPluginSortImports, {
+  PluginConfig,
+} from "@ianvs/prettier-plugin-sort-imports"
+// @ts-ignore
+import PrettierPluginAstro from "prettier-plugin-astro"
+
+export default {
   semi: false,
   plugins: [
-    require.resolve("prettier-package-json"),
-    require.resolve("@ianvs/prettier-plugin-sort-imports"),
-    require.resolve("prettier-plugin-astro"),
+    PrettierPackageJson,
+    PrettierPluginSortImports,
+    PrettierPluginAstro,
   ],
   overrides: [
     {
@@ -38,4 +45,4 @@ module.exports = {
     "",
     "^[./]",
   ],
-}
+} satisfies Config & PluginConfig

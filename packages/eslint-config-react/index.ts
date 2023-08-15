@@ -1,13 +1,4 @@
-let next
-try {
-  next = require("next")
-} catch (e) {
-  next = null
-}
-
-const nextOnlyExtends = next !== null ? ["plugin:@next/next/recommended"] : []
-
-module.exports = {
+export default {
   extends: [
     "plugin:tailwindcss/recommended",
     "eslint:recommended",
@@ -16,7 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    ...nextOnlyExtends,
+    "plugin:@next/next/recommended",
     "prettier",
   ],
   ignorePatterns: [
@@ -56,7 +47,7 @@ module.exports = {
     "react/prop-types": "off",
 
     // dev
-    "react-refresh/only-export-components": next === null ? "warn" : "off",
+    "react-refresh/only-export-components": "warn",
 
     // formatting
     "prefer-template": "warn",
