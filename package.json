@@ -1,8 +1,7 @@
 {
   "name": "@hyoban/config",
-  "private": true,
   "version": "4.0.7",
-  "packageManager": "pnpm@8.6.12",
+  "private": true,
   "scripts": {
     "build": "pnpm -r run build",
     "release": "bumpp -r && pnpm -r publish --access public"
@@ -11,5 +10,6 @@
     "bumpp": "^9.1.1",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
-  }
+  },
+  "packageManager": "pnpm@8.6.12"
 }
