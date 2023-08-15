@@ -1,7 +1,7 @@
 {
   "name": "@hyoban/config",
   "private": true,
-  "packageManager": "pnpm@8.6.11",
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
     "build": "pnpm -r run build",
     "release": "bumpp -r && pnpm -r publish --access public"
