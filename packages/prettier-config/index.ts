@@ -1,5 +1,5 @@
-import type { PluginConfig } from "@ianvs/prettier-plugin-sort-imports"
 import type { Config } from "prettier"
+import type { PluginConfig } from "@ianvs/prettier-plugin-sort-imports"
 
 const config: Config & PluginConfig = {
   semi: false,
@@ -42,4 +42,4 @@ const config: Config & PluginConfig = {
   ],
 }
 
-export default config
+export = config
