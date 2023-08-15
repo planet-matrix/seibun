@@ -9,7 +9,7 @@
   ],
   "main": "./dist/index.cjs",
   "scripts": {
-    "build": "tsup index.ts",
+    "build": "tsup index.ts --format cjs --clean",
     "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {

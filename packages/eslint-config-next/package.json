@@ -7,17 +7,8 @@
     "dist"
   ],
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "scripts": {
-    "build": "rimraf dist && tsup index.ts --format cjs,esm --dts --clean",
+    "build": "tsup index.ts --format cjs --clean",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {

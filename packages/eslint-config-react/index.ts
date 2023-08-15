@@ -1,4 +1,4 @@
-module.exports = {
+export = {
   extends: [
     "plugin:tailwindcss/recommended",
     "eslint:recommended",
