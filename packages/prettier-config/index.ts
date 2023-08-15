@@ -4,7 +4,7 @@ import PrettierPluginSortImports, {
   PluginConfig,
 } from "@ianvs/prettier-plugin-sort-imports"
 // @ts-ignore
-import PrettierPluginAstro from "prettier-plugin-astro"
+import * as PrettierPluginAstro from "prettier-plugin-astro"
 
 export default {
   semi: false,
