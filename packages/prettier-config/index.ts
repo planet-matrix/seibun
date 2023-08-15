@@ -6,7 +6,7 @@ import PrettierPluginSortImports, {
 // @ts-ignore
 import * as PrettierPluginAstro from "prettier-plugin-astro"
 
-export default {
+const config: Config & PluginConfig = {
   semi: false,
   plugins: [
     PrettierPackageJson,
@@ -45,4 +45,6 @@ export default {
     "",
     "^[./]",
   ],
-} satisfies Config & PluginConfig
+}
+
+export default config
