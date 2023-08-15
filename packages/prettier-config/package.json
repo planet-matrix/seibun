@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/prettier-config",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "hyoban's prettier config",
   "license": "MIT",
   "main": "./dist/index.js",
