@@ -73,10 +73,10 @@ importers:
         version: 0.11.0
 
   packages/tsconfig:
-    devDependencies:
+    dependencies:
       typescript:
-        specifier: ^5.1.6
-        version: 5.1.6
+        specifier: '>= 5'
+        version: 5.0.2
 
 packages:
 
@@ -2849,12 +2849,6 @@ packages:
     engines: {node: '>=12.20'}
     hasBin: true
     dev: false
-
-  /typescript@5.1.6:
-    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-    dev: true
 
   /ufo@1.2.0:
     resolution: {integrity: sha512-RsPyTbqORDNDxqAdQPQBpgqhWle1VcTSou/FraClYlHf6TZnQcGslpLcAphNR+sQW4q5lLWLbOsRlh9j24baQg==}
