@@ -1,6 +1,7 @@
 {
   "name": "@hyoban/config",
   "private": true,
+  "version": "4.0.6",
   "packageManager": "pnpm@8.6.12",
   "scripts": {
     "build": "pnpm -r run build",
@@ -10,6 +11,5 @@
     "bumpp": "^9.1.1",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
-  },
-  "version": "4.0.6"
+  }
 }

@@ -4,7 +4,7 @@ import type { PluginConfig } from "@ianvs/prettier-plugin-sort-imports"
 const config: Config & PluginConfig = {
   semi: false,
   plugins: [
-    "prettier-package-json",
+    "prettier-plugin-pkgsort",
     "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-astro",
   ],
