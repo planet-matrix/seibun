@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-next",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "hyoban's eslint config for Next.js",
   "license": "MIT",
   "main": "./dist/index.js",
