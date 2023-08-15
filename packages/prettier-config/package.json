@@ -3,12 +3,13 @@
   "version": "4.0.3",
   "description": "hyoban's prettier config",
   "license": "MIT",
+  "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "scripts": {
-    "build": "rimraf dist && tsup index.ts --format cjs,esm --dts --clean",
+    "build": "tsup index.ts --format cjs --clean",
     "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {

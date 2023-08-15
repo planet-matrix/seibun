@@ -1,17 +1,12 @@
+import type { PluginConfig } from "@ianvs/prettier-plugin-sort-imports"
 import type { Config } from "prettier"
-import PrettierPackageJson from "prettier-package-json"
-import PrettierPluginSortImports, {
-  PluginConfig,
-} from "@ianvs/prettier-plugin-sort-imports"
-// @ts-ignore
-import * as PrettierPluginAstro from "prettier-plugin-astro"
 
 const config: Config & PluginConfig = {
   semi: false,
   plugins: [
-    PrettierPackageJson,
-    PrettierPluginSortImports,
-    PrettierPluginAstro,
+    "prettier-package-json",
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-astro",
   ],
   overrides: [
     {
