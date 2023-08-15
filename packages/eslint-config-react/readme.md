@@ -1,6 +1,6 @@
 # @hyoban/eslint-config-react
 
-Use this with [prettier](https://github.com/hyoban/prettier-config), typescript, tailwindcss.
+Use this with prettier, typescript, tailwindcss.
 
 ## Install
 
@@ -28,8 +28,7 @@ ni -D eslint @hyoban/eslint-config-react
 ```jsonc
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.fixAll.eslint": true
   },
   "eslint.validate": ["typescript", "typescriptreact"],
   "typescript.preferences.importModuleSpecifier": "non-relative",
