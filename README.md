@@ -1,5 +1,7 @@
 # @hyoban/config
 
+[![npm](https://img.shields.io/npm/v/@hyoban/eslint-config-react?color=444&label=)](https://npmjs.com/package/@hyoban/eslint-config-react)
+
 Use this with React, tailwindcss, typescript, eslint, prettier.
 
 ## Install
