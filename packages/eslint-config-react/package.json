@@ -3,12 +3,12 @@
   "version": "4.0.8",
   "description": "hyoban's eslint config for react",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup index.ts --format cjs --clean",
+    "build": "tsup index.ts --format cjs --treeshake --clean",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
