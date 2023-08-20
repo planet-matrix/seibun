@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "build": "pnpm -r run build",
+    "format": "prettier --cache --write .",
     "release": "bumpp -r && pnpm -r publish --access public"
   },
+  "prettier": "./packages/prettier-config/dist/index.cjs",
   "devDependencies": {
     "bumpp": "^9.1.1",
     "tsup": "^7.2.0",
