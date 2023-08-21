@@ -52,6 +52,23 @@ ni -D prettier @hyoban/prettier-config
 }
 ```
 
+`.zed/settings.json`
+
+```jsonc
+{
+  "format_on_save": "on",
+  "formatter": {
+    "external": {
+      "command": "node_modules/.bin/prettier",
+      "arguments": [
+        "--stdin-filepath",
+        "{buffer_path}"
+      ]
+    }
+  }
+}
+```
+
 ## Troubleshooting
 
 If you get an error like `eslint: ClassName 'xxx' is not a Tailwind CSS class!` in a monorepo, and it's not correct.
