@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "ESNext",
-    "module": "NodeNext",
+    "module": "ESNext",
     "moduleResolution": "Bundler",
     "esModuleInterop": true
   },

@@ -1,3 +1,12 @@
+import { dirname } from "node:path"
+import { fileURLToPath } from "node:url"
+import path from "path"
+
+const _dirname =
+  typeof __dirname !== "undefined"
+    ? __dirname
+    : dirname(fileURLToPath(import.meta.url))
+
 export default {
   extends: [
     "plugin:tailwindcss/recommended",
@@ -24,6 +33,7 @@ export default {
     },
     tailwindcss: {
       callees: ["classnames", "cn", "cva"],
+      config: path.resolve(_dirname, "tailwind.config.cjs"),
     },
   },
   rules: {
