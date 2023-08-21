@@ -51,3 +51,22 @@ ni -D prettier @hyoban/prettier-config
   }
 }
 ```
+
+## Troubleshooting
+
+If you get an error like `eslint: ClassName 'xxx' is not a Tailwind CSS class!` in a monorepo, and it's not correct.
+
+Try to set `eslint.workingDirectories` in your VSCode settings, or you can set tailwind config path explicitly.
+
+```js
+const path = require("path")
+
+module.exports = {
+  extends: "@hyoban/eslint-config-react",
+  settings: {
+    tailwindcss: {
+      config: path.resolve(__dirname, "./tailwind.config.cjs"),
+    },
+  },
+}
+```
