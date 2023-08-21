@@ -7,6 +7,7 @@ export default {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    "plugin:@cspell/recommended",
     "prettier",
   ],
   ignorePatterns: [
