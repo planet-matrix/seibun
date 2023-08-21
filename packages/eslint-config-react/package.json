@@ -3,7 +3,8 @@
   "version": "4.0.12",
   "description": "hyoban's eslint config for react",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "type": "module",
+  "main": "./dist/index.cjs",
   "files": [
     "dist"
   ],
