@@ -39,6 +39,9 @@ importers:
       '@hyoban/eslint-config-react':
         specifier: workspace:*
         version: link:../../packages/eslint-config-react
+      '@hyoban/prettier-config':
+        specifier: workspace:^
+        version: link:../../packages/prettier-config
       '@hyoban/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -63,6 +66,9 @@ importers:
       postcss:
         specifier: ^8.4.28
         version: 8.4.28
+      prettier:
+        specifier: ^3.0.2
+        version: 3.0.2
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
@@ -3937,6 +3943,12 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dev: false
+
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
