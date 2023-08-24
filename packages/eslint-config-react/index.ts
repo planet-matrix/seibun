@@ -1,3 +1,8 @@
+const isInEditor =
+  (process.env["VSCODE_PID"] || process.env["JETBRAINS_IDE"]) &&
+  !process.env["CI"]
+const offInEditor = isInEditor ? "off" : "error"
+
 export default {
   extends: [
     "plugin:tailwindcss/recommended",
@@ -7,7 +12,6 @@ export default {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "plugin:@cspell/recommended",
     "prettier",
   ],
   ignorePatterns: [
@@ -16,7 +20,13 @@ export default {
     "!*.tsx",
     "!*.ts",
   ],
-  plugins: ["@typescript-eslint", "react-refresh", "import", "unused-imports"],
+  plugins: [
+    "@typescript-eslint",
+    "react-refresh",
+    "import",
+    "unused-imports",
+    "@cspell",
+  ],
   parser: "@typescript-eslint/parser",
   root: true,
   settings: {
@@ -38,7 +48,7 @@ export default {
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",
 
-    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-imports": offInEditor,
 
     // tailwind
     "tailwindcss/classnames-order": "off",
@@ -54,5 +64,7 @@ export default {
     "react/jsx-curly-brace-presence": ["warn", "never"],
 
     "import/no-anonymous-default-export": "warn",
+
+    "@cspell/spellchecker": offInEditor,
   },
 }
