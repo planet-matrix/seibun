@@ -32,11 +32,6 @@
     "resolveJsonModule": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "useDefineForClassFields": true,
-    "allowSyntheticDefaultImports": true,
-
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "allowSyntheticDefaultImports": true
   }
 }

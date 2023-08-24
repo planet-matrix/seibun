@@ -1,3 +1,9 @@
 {
-  "extends": "@hyoban/tsconfig"
+  "extends": "@hyoban/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  }
 }
