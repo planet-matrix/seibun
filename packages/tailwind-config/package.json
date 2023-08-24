@@ -1,0 +1,26 @@
+{
+  "name": "@hyoban/tailwind-config",
+  "version": "4.0.16",
+  "description": "hyoban's tailwind config",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup index.ts --format cjs --treeshake --clean",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@egoist/tailwindcss-icons": "^1.1.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss-animate": "^1.0.6"
+  },
+  "peerDependencies": {
+    "@iconify-json/lucide": ">= 1",
+    "@iconify-json/mdi": ">= 1",
+    "@iconify-json/simple-icons": ">= 1",
+    "tailwindcss": ">= 3"
+  }
+}
