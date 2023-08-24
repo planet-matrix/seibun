@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/tailwind-config",
-  "version": "4.1.2",
+  "version": "4.2.0",
   "description": "hyoban's tailwind config",
   "license": "MIT",
   "type": "module",
