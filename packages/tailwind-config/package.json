@@ -6,7 +6,8 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "files": [
-    "dist"
+    "dist",
+    "globals.css"
   ],
   "scripts": {
     "build": "tsup index.ts --format cjs --treeshake --clean",
@@ -14,11 +15,11 @@
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "tailwindcss-animate": "^1.0.6",
     "@iconify-json/lucide": "^1.1.119",
     "@iconify-json/mdi": "^1.1.54",
-    "@iconify-json/simple-icons": "^1.1.67"
+    "@iconify-json/simple-icons": "^1.1.67",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss-animate": "^1.0.6"
   },
   "peerDependencies": {
     "tailwindcss": ">= 3"
