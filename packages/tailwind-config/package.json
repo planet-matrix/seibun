@@ -15,12 +15,12 @@
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
     "@tailwindcss/typography": "^0.5.9",
-    "tailwindcss-animate": "^1.0.6"
+    "tailwindcss-animate": "^1.0.6",
+    "@iconify-json/lucide": "^1.1.119",
+    "@iconify-json/mdi": "^1.1.54",
+    "@iconify-json/simple-icons": "^1.1.67"
   },
   "peerDependencies": {
-    "@iconify-json/lucide": ">= 1",
-    "@iconify-json/mdi": ">= 1",
-    "@iconify-json/simple-icons": ">= 1",
     "tailwindcss": ">= 3"
   }
 }
