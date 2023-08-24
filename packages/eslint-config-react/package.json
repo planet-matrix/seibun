@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-react",
-  "version": "4.0.18",
+  "version": "4.1.0",
   "description": "hyoban's eslint config for react",
   "license": "MIT",
   "type": "module",
