@@ -9,8 +9,8 @@
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
   "devDependencies": {
-    "@types/node": "^20.5.1",
-    "bumpp": "^9.1.1",
+    "@types/node": "^20.5.4",
+    "bumpp": "^9.2.0",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   },

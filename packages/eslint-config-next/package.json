@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@hyoban/eslint-config-react": "workspace:*",
-    "@next/eslint-plugin-next": "^13.4.16"
+    "@next/eslint-plugin-next": "^13.4.19"
   },
   "peerDependencies": {
     "eslint": ">= 8",
