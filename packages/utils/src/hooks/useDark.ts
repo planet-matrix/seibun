@@ -1,16 +1,13 @@
-import { useAtom } from "jotai"
-import { atomWithStorage } from "jotai/utils"
 import { useEffect } from "react"
 
+import { useLocalStorage } from "./useLocalStorage"
 import { useSystemDark } from "./useSystemDark"
 
 const themeOptions = ["system", "light", "dark"] as const
 export type Theme = (typeof themeOptions)[number]
 
-const appearanceAtom = atomWithStorage<Theme>("use-dark", "system")
-
 export function useDark() {
-  const [setting, setSetting] = useAtom(appearanceAtom)
+  const [setting, setSetting] = useLocalStorage<Theme>("use-dark", "system")
   const isDark = useSystemDark()
 
   useEffect(() => {

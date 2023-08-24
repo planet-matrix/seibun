@@ -1,11 +1,4 @@
 {
   "extends": "./packages/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "esModuleInterop": true
-  },
   "include": ["./packages/**/*.ts"]
 }
