@@ -20,13 +20,7 @@ export default {
     "!*.tsx",
     "!*.ts",
   ],
-  plugins: [
-    "@typescript-eslint",
-    "react-refresh",
-    "import",
-    "unused-imports",
-    "@cspell",
-  ],
+  plugins: ["@typescript-eslint", "react-refresh", "import", "@cspell"],
   parser: "@typescript-eslint/parser",
   root: true,
   settings: {
@@ -47,8 +41,6 @@ export default {
     // TypeScript provides noUnusedLocals and noUnusedParameters compiler options
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",
-
-    "unused-imports/no-unused-imports": offInEditor,
 
     // tailwind
     "tailwindcss/classnames-order": "off",
