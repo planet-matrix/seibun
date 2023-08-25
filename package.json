@@ -3,7 +3,6 @@
   "version": "5.0.3",
   "private": true,
   "scripts": {
-    "prebuild": "rimraf packages/*/dist",
     "build": "turbo run build",
     "format": "prettier --cache --write .",
     "release": "bumpp -r && pnpm run build && pnpm -r publish --access public"
