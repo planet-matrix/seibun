@@ -13,9 +13,11 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "prebuild": "rimraf ./dist && tailwindcss -i ./src/index.css -o ./src/styles.css",
     "build": "tsup src/index.ts",
     "prepublishOnly": "npm run build",
-    "watch": "npm run build -- --watch src"
+    "watch": "npm run build -- --watch src",
+    "watch:css": "tailwindcss -i ./src/index.css -o ./src/styles.css --watch"
   },
   "dependencies": {
     "@hyoban/utils": "workspace:*",
@@ -23,8 +25,12 @@
     "class-variance-authority": "^0.7.0"
   },
   "devDependencies": {
+    "@hyoban/tailwind-config": "workspace:^",
     "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7"
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3"
   },
   "peerDependencies": {
     "react": "^18.2.0",
