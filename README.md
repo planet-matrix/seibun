@@ -1,5 +1,7 @@
 # @hyoban/config
 
+> check [demo setup](./demo/vite-react/) for more details.
+
 [![npm](https://img.shields.io/npm/v/@hyoban/eslint-config-react?color=444&label=)](https://npmjs.com/package/@hyoban/eslint-config-react)
 
 Use this with React, tailwindcss, typescript, eslint, prettier.
@@ -48,23 +50,6 @@ ni -D prettier @hyoban/prettier-config
   "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
-  }
-}
-```
-
-`.zed/settings.json`
-
-```jsonc
-{
-  "format_on_save": "on",
-  "formatter": {
-    "external": {
-      "command": "node_modules/.bin/prettier",
-      "arguments": [
-        "--stdin-filepath",
-        "{buffer_path}"
-      ]
-    }
   }
 }
 ```
