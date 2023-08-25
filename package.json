@@ -6,7 +6,7 @@
     "prebuild": "rimraf packages/*/dist",
     "build": "turbo run build",
     "format": "prettier --cache --write .",
-    "release": "bumpp -r"
+    "release": "bumpp -r && pnpm run build && pnpm -r publish --access public"
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
   "dependencies": {
