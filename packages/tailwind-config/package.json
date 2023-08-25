@@ -10,8 +10,7 @@
     "globals.css"
   ],
   "scripts": {
-    "build": "tsup index.ts --format cjs --treeshake --clean",
-    "prepublishOnly": "pnpm run build"
+    "build": "tsup index.ts --format cjs --treeshake --clean"
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",

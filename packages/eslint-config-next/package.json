@@ -9,8 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup index.ts --format cjs --treeshake --clean",
-    "prepublishOnly": "pnpm run build"
+    "build": "tsup index.ts --format cjs --treeshake --clean"
   },
   "dependencies": {
     "@hyoban/eslint-config-react": "workspace:*",

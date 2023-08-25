@@ -15,7 +15,6 @@
   "scripts": {
     "prebuild": "tailwindcss -i ./src/index.css -o ./src/styles.css",
     "build": "tsup src/index.ts",
-    "prepublishOnly": "npm run build",
     "watch": "npm run build -- --watch src",
     "watch:css": "tailwindcss -i ./src/index.css -o ./src/styles.css --watch"
   },
