@@ -3,11 +3,15 @@
   "version": "5.0.1",
   "private": true,
   "scripts": {
-    "build": "pnpm -r --filter=./packages/* run build",
+    "prebuild": "rimraf packages/*/dist",
+    "build": "turbo run build",
     "format": "prettier --cache --write .",
-    "release": "bumpp -r && pnpm -r publish --access public"
+    "release": "bumpp -r"
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
+  "dependencies": {
+    "turbo": "^1.10.13"
+  },
   "devDependencies": {
     "@types/node": "^20.5.4",
     "bumpp": "^9.2.0",
