@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      turbo:
-        specifier: ^1.10.13
-        version: 1.10.13
     devDependencies:
       '@types/node':
         specifier: ^20.5.4
@@ -24,6 +20,9 @@ importers:
       tsup:
         specifier: ^7.2.0
         version: 7.2.0(typescript@5.1.6)
+      turbo:
+        specifier: ^1.10.13
+        version: 1.10.13
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -4648,7 +4647,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo-darwin-arm64@1.10.13:
@@ -4656,7 +4655,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo-linux-64@1.10.13:
@@ -4664,7 +4663,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo-linux-arm64@1.10.13:
@@ -4672,7 +4671,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo-windows-64@1.10.13:
@@ -4680,7 +4679,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo-windows-arm64@1.10.13:
@@ -4688,7 +4687,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: false
+    dev: true
     optional: true
 
   /turbo@1.10.13:
@@ -4701,7 +4700,7 @@ packages:
       turbo-linux-arm64: 1.10.13
       turbo-windows-64: 1.10.13
       turbo-windows-arm64: 1.10.13
-    dev: false
+    dev: true
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}

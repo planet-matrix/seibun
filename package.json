@@ -8,14 +8,12 @@
     "release": "bumpp -r && pnpm run build && pnpm -r publish --access public"
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
-  "dependencies": {
-    "turbo": "^1.10.13"
-  },
   "devDependencies": {
     "@types/node": "^20.5.4",
     "bumpp": "^9.2.0",
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",
+    "turbo": "^1.10.13",
     "typescript": "^5.1.6"
   },
   "packageManager": "pnpm@8.6.12"
