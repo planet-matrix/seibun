@@ -1,4 +1,10 @@
-import { useCallback, useEffect, useState } from "react"
+import {
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useEffect,
+  useState,
+} from "react"
 
 import { getEnvironment, useEffectEvent } from "../utils"
 
@@ -18,11 +24,13 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
   }, [key, initialValue])
 
   const [localState, setLocalState] = useState(readValue)
-  const handleSetState = useCallback(
-    (value: T) => {
+  const handleSetState = useCallback<Dispatch<SetStateAction<T>>>(
+    (value) => {
       try {
         const nextState =
-          typeof value === "function" ? value(localState) : value
+          typeof value === "function"
+            ? (value as (localState: T) => T)(localState)
+            : value
         window.localStorage.setItem(key, JSON.stringify(nextState))
         setLocalState(nextState)
         window.dispatchEvent(new Event("local-storage"))
