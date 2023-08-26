@@ -15,8 +15,8 @@
   "scripts": {
     "prebuild": "tailwindcss -i ./src/index.css -o ./src/styles.css",
     "build": "tsup src/index.tsx",
-    "watch": "npm run build -- --watch src",
-    "watch:css": "tailwindcss -i ./src/index.css -o ./src/styles.css --watch"
+    "dev": "npm run build -- --watch src",
+    "dev:css": "tailwindcss -i ./src/index.css -o ./src/styles.css --watch"
   },
   "dependencies": {
     "@hyoban/utils": "workspace:*",

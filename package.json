@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev dev:css --parallel",
     "format": "prettier --cache --write .",
     "release": "bumpp -r && pnpm run build && pnpm -r publish --access public"
   },
