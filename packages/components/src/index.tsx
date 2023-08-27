@@ -1,7 +1,5 @@
 import { cn, useDark } from "@hyoban/utils"
 
-import "./styles.css"
-
 export * from "./button"
 
 export function AppearanceSwitch(
