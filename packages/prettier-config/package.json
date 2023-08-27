@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/prettier-config",
-  "version": "5.0.8",
+  "version": "5.1.0",
   "description": "hyoban's prettier config",
   "license": "MIT",
   "type": "module",
