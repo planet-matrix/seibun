@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 
+import { getEnvironment } from "../utils"
 import { useLocalStorage } from "./useLocalStorage"
 import { useSystemDark } from "./useSystemDark"
 
@@ -18,8 +19,10 @@ export function useDark() {
       document.documentElement.classList.toggle("dark", false)
     }
 
-    if ((setting === "dark" && isDark) || (setting === "light" && !isDark)) {
-      setSetting("system")
+    if (getEnvironment() === "server") {
+      if ((setting === "dark" && isDark) || (setting === "light" && !isDark)) {
+        setSetting("system")
+      }
     }
   }, [setting, isDark, setSetting])
 

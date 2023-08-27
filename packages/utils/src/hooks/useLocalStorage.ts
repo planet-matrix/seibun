@@ -10,7 +10,7 @@ import { getEnvironment, useEffectEvent } from "../utils"
 
 export function useLocalStorage<T>(key: string, initialValue: T) {
   if (getEnvironment() === "server") {
-    throw Error("useLocalStorage is a client-side only hook.")
+    return [initialValue, () => {}] as const
   }
 
   const readValue = useCallback(() => {

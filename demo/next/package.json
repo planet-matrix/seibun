@@ -1,0 +1,37 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@hyoban/eslint-config-next"
+    ]
+  },
+  "dependencies": {
+    "@hyoban/components": "workspace:^",
+    "@hyoban/utils": "workspace:^",
+    "next": "13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@hyoban/eslint-config-next": "workspace:^",
+    "@hyoban/tailwind-config": "workspace:^",
+    "@hyoban/tsconfig": "workspace:^",
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.48.0",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
