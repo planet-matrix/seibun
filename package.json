@@ -6,7 +6,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev dev:css --parallel",
     "format": "prettier --cache --write .",
-    "release": "bumpp -r && pnpm run build && pnpm -r publish --access public"
+    "release": "bumpp -r",
+    "publish": "pnpm run build && pnpm -r publish --access public"
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
   "devDependencies": {
