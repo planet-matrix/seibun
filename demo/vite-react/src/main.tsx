@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client"
 import App from "~/App"
 
 import "@hyoban/tailwind-config/globals.css"
+import "@hyoban/components/css"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

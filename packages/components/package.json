@@ -7,13 +7,15 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./css": "./dist/tailwind.css"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.tsx",
+    "prebuild": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css --minify",
+    "build": "pnpm run prebuild && tsup src/index.tsx",
     "dev": "npm run build -- --watch src"
   },
   "dependencies": {

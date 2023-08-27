@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
+import { ThemeProvider } from "@hyoban/components"
 
 import "@hyoban/tailwind-config/globals.css"
-
-import { ThemeProvider } from "@hyoban/components"
+import "@hyoban/components/css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
