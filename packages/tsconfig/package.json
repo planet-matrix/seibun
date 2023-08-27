@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/tsconfig",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "hyoban's base TypeScript config",
   "license": "MIT",
   "main": "tsconfig.json",

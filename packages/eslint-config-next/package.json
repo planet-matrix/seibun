@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-next",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "hyoban's eslint config for Next.js",
   "license": "MIT",
   "type": "module",
