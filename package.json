@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "build": "nx run-many --target=build",
-    "dev": "nx run-many -t dev dev:css",
     "format": "prettier --cache --write .",
     "publish": "pnpm run build && pnpm -r publish --access public",
     "release": "bumpp -r"
