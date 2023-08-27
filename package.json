@@ -3,8 +3,8 @@
   "version": "5.1.1",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev dev:css --parallel",
+    "build": "nx run-many --target=build",
+    "dev": "nx run-many -t dev dev:css",
     "format": "prettier --cache --write .",
     "publish": "pnpm run build && pnpm -r publish --access public",
     "release": "bumpp -r"
@@ -13,10 +13,10 @@
   "devDependencies": {
     "@types/node": "^20.5.6",
     "bumpp": "^9.2.0",
+    "nx": "16.7.4",
     "prettier": "^3.0.2",
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",
-    "turbo": "^1.10.13",
     "typescript": "^5.2.2"
   },
   "packageManager": "pnpm@8.7.0",
