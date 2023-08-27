@@ -30,6 +30,9 @@ importers:
       bumpp:
         specifier: ^9.2.0
         version: 9.2.0
+      prettier:
+        specifier: ^3.0.2
+        version: 3.0.2
       rimraf:
         specifier: ^5.0.1
         version: 5.0.1
@@ -3669,7 +3672,7 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 1.8.1
-      prettier: 3.0.0
+      prettier: 3.0.2
       sass-formatter: 0.7.7
     dev: false
 
@@ -3696,7 +3699,6 @@ packages:
     resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
   /progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
