@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nx run-many --target=build",
     "format": "prettier --cache --write .",
+    "prepare": "pnpm run build",
     "publish": "pnpm run build && pnpm -r publish --access public",
     "release": "bumpp -r"
   },
