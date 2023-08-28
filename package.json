@@ -3,7 +3,7 @@
   "version": "6.0.3",
   "private": true,
   "scripts": {
-    "build": "nx run-many --target=build",
+    "build": "nx run-many --target=build --projects=@hyoban/*",
     "format": "prettier --cache --write .",
     "prepare": "pnpm run build",
     "publish": "pnpm run build && pnpm -r publish --access public",
