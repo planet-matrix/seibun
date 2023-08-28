@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React + Vite</title>
   </head>
+  <script>
+    !(function () {
+      var e =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches,
+        t = localStorage.getItem("use-dark") || "system"
+      ;('"dark"' === t || (e && '"light"' !== t)) &&
+        document.documentElement.classList.toggle("dark", !0)
+    })()
+  </script>
   <body class="h-full">
     <div id="root" class="h-full"></div>
     <script type="module" src="/src/main.tsx"></script>
