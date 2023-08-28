@@ -1,6 +1,6 @@
 # @hyoban/config
 
-> check [demo setup](./demo/vite-react/) for more details.
+> check [demo setup](./apps) for more details.
 
 [![npm](https://img.shields.io/npm/v/@hyoban/eslint-config-react?color=444&label=)](https://npmjs.com/package/@hyoban/eslint-config-react)
 
