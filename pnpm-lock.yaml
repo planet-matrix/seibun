@@ -46,7 +46,7 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  demo/next:
+  apps/next:
     dependencies:
       '@hyoban/components':
         specifier: workspace:^
@@ -98,7 +98,7 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  demo/vite-react:
+  apps/vite:
     dependencies:
       '@hyoban/components':
         specifier: workspace:^
