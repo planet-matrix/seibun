@@ -1,6 +1,11 @@
 {
   "name": "@hyoban/components",
   "version": "6.0.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyoban/config",
+    "directory": "packages/components"
+  },
   "type": "module",
   "exports": {
     ".": {

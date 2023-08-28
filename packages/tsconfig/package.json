@@ -2,6 +2,11 @@
   "name": "@hyoban/tsconfig",
   "version": "6.0.4",
   "description": "hyoban's base TypeScript config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyoban/config",
+    "directory": "packages/tsconfig"
+  },
   "license": "MIT",
   "main": "tsconfig.json",
   "files": [

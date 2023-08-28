@@ -2,6 +2,11 @@
   "name": "@hyoban/tailwind-config",
   "version": "6.0.4",
   "description": "hyoban's tailwind config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyoban/config",
+    "directory": "packages/tailwind-config"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
