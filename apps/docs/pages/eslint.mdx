@@ -1,0 +1,58 @@
+import { Callout } from "nextra/components"
+
+# 设置 ESLint
+
+## 安装依赖
+
+移除项目预置的 ESLint 配置和依赖。
+
+```sh
+nun @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks eslint-plugin-react-refresh
+rm .eslintrc.cjs
+```
+
+取决于你在写纯 React 还是 Next.js 项目，安装不同的 config 包。
+
+```sh
+ni -D eslint @hyoban/eslint-config-react
+```
+
+## 添加配置
+
+<Callout type="info">需要注意，默认配置中只对 ts 和 tsx 文件进行检查。</Callout>
+
+添加脚本和使用的配置到你的 `package.json`。
+
+```json
+{
+  "scripts": {
+    "lint": "eslint --fix ."
+  },
+  "eslintConfig": {
+    "extends": "@hyoban/eslint-config-react"
+  }
+}
+```
+
+添加 vscode 设置到 `.vscode/settings.json`。如果创建的项目处于 monorepo 中，需要添加 `eslint.workingDirectories` 配置。
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // optional
+  "eslint.workingDirectories": ["./packages/web"]
+}
+```
+
+## 处理 Tailwind className 识别不正确的问题
+
+如果你遇到 `eslint: ClassName 'xxx' is not a Tailwind CSS class!` 之类的问题，需要在项目根目录创建 `.npmrc` 文件，并添加如下内容。
+
+```
+public-hoist-pattern[]=*eslint*
+public-hoist-pattern[]=*prettier*
+public-hoist-pattern[]=@iconify*
+```
