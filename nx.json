@@ -14,9 +14,6 @@
     },
     "dev": {
       "dependsOn": ["^dev"]
-    },
-    "dev:css": {
-      "dependsOn": ["^dev:css"]
     }
   },
   "affected": {
