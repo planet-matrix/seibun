@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/config",
-  "version": "6.0.5",
+  "version": "6.0.6",
   "private": true,
   "scripts": {
     "build": "nx run-many --target=build --projects=@hyoban/*",
