@@ -46,13 +46,3 @@ ni -D eslint @hyoban/eslint-config-react
   "eslint.workingDirectories": ["./packages/web"]
 }
 ```
-
-## 处理 Tailwind className 识别不正确的问题
-
-如果你遇到 `eslint: ClassName 'xxx' is not a Tailwind CSS class!` 之类的问题，需要在项目根目录创建 `.npmrc` 文件，并添加如下内容。
-
-```
-public-hoist-pattern[]=*eslint*
-public-hoist-pattern[]=*prettier*
-public-hoist-pattern[]=@iconify*
-```

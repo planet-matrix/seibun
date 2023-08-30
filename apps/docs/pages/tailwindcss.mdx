@@ -1,0 +1,34 @@
+# Tailwind CSS
+
+## 配置内容
+
+1. 基于 [shandcn ui](https://ui.shadcn.com) 的 tailwind css 配置
+1. 预置 [tailwindcss icons](https://github.com/egoist/tailwindcss-icons) 插件和 lucide、mdi、simple-icons 图标库
+1. 预置 [tailwindcss typography](https://tailwindcss.com/docs/typography-plugin) 插件
+
+## 安装
+
+安装好 Tailwind CSS 和 Tailwind Config
+
+```bash
+ni -D tailwindcss postcss autoprefixer @hyoban/tailwind-config
+npx tailwindcss init -p
+```
+
+重命名 `tailwind.config.js` 为 `tailwind.config.cjs`，并修改 `tailwind.config.cjs` 内容为：
+
+```js
+module.exports = require("@hyoban/tailwind-config")
+```
+
+## 配置 pnpm hoist 规则
+
+在 `package.json` 中添加以下内容：
+
+```json
+{
+  "pnpm": {
+    "hoistPattern": ["*eslint*", "*prettier*", "@iconify*"]
+  }
+}
+```

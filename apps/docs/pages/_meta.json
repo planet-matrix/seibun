@@ -1,6 +1,7 @@
 {
   "index": "Introduction",
   "prettier": "Prettier",
+  "tailwindcss": "Tailwind CSS",
   "eslint": "ESLint",
   "contact": {
     "title": "Contact ↗",
