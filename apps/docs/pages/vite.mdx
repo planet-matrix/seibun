@@ -1,0 +1,57 @@
+import { Steps } from "nextra/components"
+
+# Vite
+
+## 快速使用
+
+<Steps>
+
+### 安装依赖
+
+```bash
+ni -D @types/node @hyoban/vite-config
+```
+
+### 继承配置并添加自定义别名
+
+```ts filename="vite.config.ts"
+import path from "node:path"
+import { defineConfig } from "vite"
+import config from "@hyoban/vite-config"
+
+export default defineConfig({
+  ...config,
+  resolve: {
+    alias: [
+      {
+        find: "~/",
+        replacement: `${path.resolve(__dirname, "src")}/`,
+      },
+    ],
+  },
+})
+```
+
+</Steps>
+
+## 配置详情
+
+除了 react 的插件，还是用 vite-plugin-checker 来做类型和 lint 检查。
+
+```ts filename="vite.config.ts"
+import { defineConfig } from "vite"
+import checker from "vite-plugin-checker"
+import react from "@vitejs/plugin-react-swc"
+
+export default defineConfig({
+  plugins: [
+    react(),
+    checker({
+      typescript: true,
+      eslint: {
+        lintCommand: "eslint .",
+      },
+    }),
+  ],
+})
+```

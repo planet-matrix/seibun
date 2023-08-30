@@ -3,6 +3,8 @@
   "prettier": "Prettier",
   "tailwindcss": "Tailwind CSS",
   "eslint": "ESLint",
+  "tsconfig": "TS Config",
+  "vite": "Vite",
   "contact": {
     "title": "Contact ↗",
     "type": "page",

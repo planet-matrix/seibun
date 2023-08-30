@@ -1,8 +1,12 @@
-import { Callout } from "nextra/components"
+import { Callout, Steps } from "nextra/components"
 
 # 设置 ESLint
 
-## 安装依赖
+## 快速使用
+
+<Steps>
+
+### 安装依赖
 
 移除项目预置的 ESLint 配置和依赖。
 
@@ -17,7 +21,7 @@ rm .eslintrc.cjs
 ni -D eslint @hyoban/eslint-config-react
 ```
 
-## 添加配置
+### 添加配置
 
 <Callout type="info">需要注意，默认配置中只对 ts 和 tsx 文件进行检查。</Callout>
 
@@ -46,3 +50,5 @@ ni -D eslint @hyoban/eslint-config-react
   "eslint.workingDirectories": ["./packages/web"]
 }
 ```
+
+</Steps>
