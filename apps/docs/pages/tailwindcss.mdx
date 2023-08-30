@@ -23,12 +23,10 @@ module.exports = require("@hyoban/tailwind-config")
 
 ## 配置 pnpm hoist 规则
 
-在 `package.json` 中添加以下内容：
+在 `.npmrc` 中添加以下内容：
 
-```json
-{
-  "pnpm": {
-    "hoistPattern": ["*eslint*", "*prettier*", "@iconify*"]
-  }
-}
+```ini
+public-hoist-pattern[]=*eslint*
+public-hoist-pattern[]=*prettier*
+public-hoist-pattern[]=@iconify*
 ```
