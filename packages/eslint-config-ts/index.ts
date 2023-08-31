@@ -7,6 +7,7 @@ export default {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
     "prettier",
   ],
   ignorePatterns: [
@@ -17,6 +18,14 @@ export default {
   ],
   plugins: ["@typescript-eslint", "import", "@cspell"],
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    tsconfigRootDir: process.cwd(),
+    project: [
+      "./tsconfig.json",
+      "./packages/*/tsconfig.json",
+      "./apps/*/tsconfig.json",
+    ],
+  },
   root: true,
   rules: {
     // https://vitejs.dev/guide/features.html#typescript
