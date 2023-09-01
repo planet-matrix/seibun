@@ -6,8 +6,8 @@ const offInEditor = isInEditor ? "off" : "error"
 export default {
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/strict-type-checked",
     "prettier",
   ],
   ignorePatterns: [

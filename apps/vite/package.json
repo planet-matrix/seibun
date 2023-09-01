@@ -12,9 +12,7 @@
   },
   "prettier": "@hyoban/prettier-config",
   "eslintConfig": {
-    "extends": [
-      "@hyoban/eslint-config-react"
-    ]
+    "extends": "@hyoban/eslint-config-react"
   },
   "dependencies": {
     "@hyoban/components": "workspace:^",

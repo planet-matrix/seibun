@@ -10,9 +10,7 @@
     "start": "next start"
   },
   "eslintConfig": {
-    "extends": [
-      "@hyoban/eslint-config-next"
-    ]
+    "extends": "@hyoban/eslint-config-next"
   },
   "dependencies": {
     "@hyoban/components": "workspace:^",
