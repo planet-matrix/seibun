@@ -1,5 +1,3 @@
-import { Callout } from "nextra/components"
-
 # 设置 Prettier
 
 ## 配置详情
@@ -10,10 +8,8 @@ import { Callout } from "nextra/components"
 1. 引入 `@ianvs/prettier-plugin-sort-imports` 来排序 import
 1. 引入 `prettier-plugin-packagejson` 来排序 package.json 的 key
 
-<Callout type="info">
-  得益于 Prettier 3.0 默认忽略 `.gitignore`
-  中指定的文件，大多数情况下你不需要创建 `.prettierignore` 文件。
-</Callout>
+得益于 Prettier 3.0 默认忽略 `.gitignore`
+中指定的文件，大多数情况下你不需要创建 `.prettierignore` 文件。
 
 ## 安装依赖
 
@@ -34,7 +30,7 @@ ni -D prettier @hyoban/prettier-config
 }
 ```
 
-<Callout type="info">如果你不需要格式化 astro，请移除 `**/*.astro` 。</Callout>
+如果你不需要格式化 astro，请移除 `**/*.astro` 。
 
 在 `.vscode/settings.json` 中添加。
 

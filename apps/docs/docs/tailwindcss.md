@@ -1,10 +1,6 @@
-import { Steps } from "nextra/components"
-
 # Tailwind CSS
 
 ## 快速使用
-
-<Steps>
 
 ### 配置 pnpm hoist 规则
 
@@ -38,8 +34,6 @@ module.exports = require("@hyoban/tailwind-config")
 ```js
 import "@hyoban/tailwind-config/globals.css"
 ```
-
-</Steps>
 
 ## 配置详情
 

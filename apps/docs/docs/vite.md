@@ -1,10 +1,6 @@
-import { Steps } from "nextra/components"
-
 # Vite
 
 ## 快速使用
-
-<Steps>
 
 ### 安装依赖
 
@@ -32,26 +28,8 @@ export default defineConfig({
 })
 ```
 
-</Steps>
-
 ## 配置详情
 
-除了 react 的插件，还是用 vite-plugin-checker 来做类型和 lint 检查。
+除了 react 的插件，还使用 vite-plugin-checker 来做类型和 lint 检查。
 
-```ts filename="vite.config.ts"
-import { defineConfig } from "vite"
-import checker from "vite-plugin-checker"
-import react from "@vitejs/plugin-react-swc"
-
-export default defineConfig({
-  plugins: [
-    react(),
-    checker({
-      typescript: true,
-      eslint: {
-        lintCommand: "eslint .",
-      },
-    }),
-  ],
-})
-```
+<<< ../../../packages/vite-config/src/index.ts
