@@ -6,6 +6,7 @@ export default {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    "prettier",
   ],
   plugins: ["react-refresh"],
   settings: {

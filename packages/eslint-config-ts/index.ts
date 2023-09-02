@@ -6,7 +6,6 @@ const offInEditor = isInEditor ? "off" : "error"
 export default {
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/strict",
     "plugin:@typescript-eslint/strict-type-checked",
     "prettier",
   ],
