@@ -13,14 +13,24 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./css": "./dist/tailwind.css"
+    "./css": "./dist/tailwind.css",
+    "./button": {
+      "require": "./dist/button/index.cjs",
+      "import": "./dist/button/index.js",
+      "types": "./dist/button/index.d.ts"
+    },
+    "./input": {
+      "require": "./dist/input/index.cjs",
+      "import": "./dist/input/index.js",
+      "types": "./dist/input/index.d.ts"
+    }
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "prebuild": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css --minify",
-    "build": "pnpm run prebuild && tsup src/index.tsx",
+    "build": "pnpm run prebuild && tsup",
     "dev": "npm run build -- --watch src"
   },
   "dependencies": {

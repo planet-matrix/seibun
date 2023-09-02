@@ -1,7 +1,5 @@
 import { cn, useDark } from "@hyoban/utils"
 
-export * from "./button"
-
 export function AppearanceSwitch(
   props: React.HTMLAttributes<HTMLButtonElement>,
 ) {
@@ -33,3 +31,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     </>
   )
 }
+
+export * from "./button"
+export * from "./input"
