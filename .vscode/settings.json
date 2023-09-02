@@ -4,13 +4,13 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" }
   ],
+
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
