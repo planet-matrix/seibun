@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-ts",
-  "version": "6.2.6",
+  "version": "6.2.7",
   "description": "hyoban's eslint config for typescript",
   "repository": {
     "type": "git",
