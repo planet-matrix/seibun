@@ -53,20 +53,39 @@ export function transitionDark(
 }
 
 export function AppearanceSwitch(
-  props: React.HTMLAttributes<HTMLButtonElement>,
+  props: React.HTMLAttributes<HTMLButtonElement> & {
+    enableTransition?: boolean
+  },
 ) {
+  const { enableTransition = false } = props
   const { isDark, toggleDark } = useDark()
 
   return (
     <button
       {...props}
-      onClick={(e) => {
-        transitionDark(e.nativeEvent, !!!isDark, toggleDark)
-      }}
+      onClick={
+        enableTransition
+          ? (e) => {
+              transitionDark(e.nativeEvent, !!!isDark, toggleDark)
+            }
+          : toggleDark
+      }
       className={cn("flex text-2xl", props.className)}
     >
-      <div className="i-lucide-sun scale-100 dark:scale-0" />
-      <div className="i-lucide-moon absolute scale-0 dark:scale-100" />
+      <div
+        className={cn(
+          "i-lucide-sun scale-100 dark:scale-0",
+          !enableTransition &&
+            "transition-transform duration-500 rotate-0 dark:-rotate-90",
+        )}
+      />
+      <div
+        className={cn(
+          "i-lucide-moon absolute scale-0 dark:scale-100",
+          !enableTransition &&
+            "transition-transform duration-500 rotate-90 dark:rotate-0",
+        )}
+      />
       <span className="sr-only">Toggle theme</span>
     </button>
   )

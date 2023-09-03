@@ -18,7 +18,7 @@ export default function App() {
           <Input placeholder="placeholder" />
         </p>
       </main>
-      <AppearanceSwitch className="mt-10" />
+      <AppearanceSwitch className="mt-10" enableTransition />
     </div>
   )
 }
