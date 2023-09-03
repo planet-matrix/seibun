@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/tsconfig",
-  "version": "6.2.2",
+  "version": "6.2.3",
   "description": "hyoban's base TypeScript config",
   "repository": {
     "type": "git",
