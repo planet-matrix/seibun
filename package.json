@@ -19,6 +19,13 @@
     "typescript": "^5.2.2"
   },
   "packageManager": "pnpm@8.7.1",
+  "cspell": {
+    "words": [
+      "lucide",
+      "hyoban",
+      "clsx"
+    ]
+  },
   "pnpm": {
     "overrides": {
       "array-includes": "npm:@nolyfill/array-includes@latest",
