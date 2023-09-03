@@ -1,4 +1,5 @@
-import { cn, useDark } from "@hyoban/utils"
+import { cn } from "@hyoban/utils"
+import { useDark } from "@hyoban/utils/hooks"
 
 export function AppearanceSwitch(
   props: React.HTMLAttributes<HTMLButtonElement>,

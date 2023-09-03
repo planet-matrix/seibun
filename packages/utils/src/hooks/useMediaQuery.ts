@@ -1,3 +1,5 @@
+"use client"
+
 import { useCallback, useSyncExternalStore } from "react"
 
 export function useMediaQuery(query: string) {

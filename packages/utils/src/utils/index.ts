@@ -1,4 +1,5 @@
-import { useCallback, useRef } from "react"
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
 
 export function getEnvironment() {
   const isDOM =
@@ -9,14 +10,10 @@ export function getEnvironment() {
   return isDOM ? "browser" : "server"
 }
 
-export function useEffectEvent<T extends (...args: unknown[]) => unknown>(
-  callback: T,
-) {
-  const ref = useRef(callback)
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
 
-  ref.current = callback
-
-  return useCallback((...args: Parameters<T>) => {
-    ref.current(...args)
-  }, [])
+export function raise(err: string): never {
+  throw new Error(err)
 }
