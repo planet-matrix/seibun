@@ -10,6 +10,7 @@ export default defineConfig({
       { text: "ESLint", link: "/eslint" },
       { text: "TS Config", link: "/tsconfig" },
       { text: "Vite", link: "/vite" },
+      { text: "Components", link: "/components" },
     ],
     socialLinks: [
       { icon: "github", link: "https://github.com/hyoban/config" },
