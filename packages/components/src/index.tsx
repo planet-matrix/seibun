@@ -10,14 +10,10 @@ export function transitionDark(
   isDark: boolean,
   toggleDark: () => void,
 ) {
-  console.log("transitionDark", isDark, event)
-
   const isAppearanceTransition =
     // @ts-expect-error experimental API
     document.startViewTransition &&
     !window.matchMedia("(prefers-reduced-motion: reduce)").matches
-
-  console.log("isAppearanceTransition", isAppearanceTransition)
 
   if (!isAppearanceTransition) {
     toggleDark()
@@ -65,12 +61,12 @@ export function AppearanceSwitch(
     <button
       {...props}
       onClick={(e) => {
-        transitionDark(e.nativeEvent, !!!isDark as boolean, toggleDark)
+        transitionDark(e.nativeEvent, !!!isDark, toggleDark)
       }}
-      className={cn("flex text-2xl", props.className)}
+      className={cn("flex relative text-2xl", props.className)}
     >
-      <div className="i-lucide-sun rotate-0 scale-100 transition-transform duration-500 dark:-rotate-90 dark:scale-0" />
-      <div className="i-lucide-moon absolute rotate-90 scale-0 transition-transform duration-500 dark:rotate-0 dark:scale-100" />
+      <div className="i-lucide-sun absolute scale-100 dark:scale-0" />
+      <div className="i-lucide-moon absolute scale-0 dark:scale-100" />
       <span className="sr-only">Toggle theme</span>
     </button>
   )
