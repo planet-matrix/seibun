@@ -63,9 +63,9 @@ export function AppearanceSwitch(
       onClick={(e) => {
         transitionDark(e.nativeEvent, !!!isDark, toggleDark)
       }}
-      className={cn("flex relative text-2xl", props.className)}
+      className={cn("flex text-2xl", props.className)}
     >
-      <div className="i-lucide-sun absolute scale-100 dark:scale-0" />
+      <div className="i-lucide-sun scale-100 dark:scale-0" />
       <div className="i-lucide-moon absolute scale-0 dark:scale-100" />
       <span className="sr-only">Toggle theme</span>
     </button>
