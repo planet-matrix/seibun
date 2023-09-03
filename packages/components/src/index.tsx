@@ -1,15 +1,72 @@
 import { cn } from "@hyoban/utils"
 import { useDark } from "@hyoban/utils/hooks"
 
+/**
+ * Credit to [@hooray](https://github.com/hooray)
+ * @see https://github.com/vuejs/vitepress/pull/2347
+ */
+export function transitionDark(
+  event: MouseEvent,
+  isDark: boolean,
+  toggleDark: () => void,
+) {
+  console.log("transitionDark", isDark, event)
+
+  const isAppearanceTransition =
+    // @ts-expect-error experimental API
+    document.startViewTransition &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
+  console.log("isAppearanceTransition", isAppearanceTransition)
+
+  if (!isAppearanceTransition) {
+    toggleDark()
+    return
+  }
+
+  const x = event.clientX
+  const y = event.clientY
+  const endRadius = Math.hypot(
+    Math.max(x, innerWidth - x),
+    Math.max(y, innerHeight - y),
+  )
+  // @ts-expect-error: Transition API
+  const transition = document.startViewTransition(async () => {
+    return new Promise((resolve) => {
+      resolve(toggleDark())
+    })
+  })
+  transition.ready.then(() => {
+    const clipPath = [
+      `circle(0px at ${x}px ${y}px)`,
+      `circle(${endRadius}px at ${x}px ${y}px)`,
+    ]
+    document.documentElement.animate(
+      {
+        clipPath: isDark ? [...clipPath].reverse() : clipPath,
+      },
+      {
+        duration: 400,
+        easing: "ease-out",
+        pseudoElement: isDark
+          ? "::view-transition-old(root)"
+          : "::view-transition-new(root)",
+      },
+    )
+  })
+}
+
 export function AppearanceSwitch(
   props: React.HTMLAttributes<HTMLButtonElement>,
 ) {
-  const { toggleDark } = useDark()
+  const { isDark, toggleDark } = useDark()
 
   return (
     <button
       {...props}
-      onClick={toggleDark}
+      onClick={(e) => {
+        transitionDark(e.nativeEvent, !!!isDark as boolean, toggleDark)
+      }}
       className={cn("flex text-2xl", props.className)}
     >
       <div className="i-lucide-sun rotate-0 scale-100 transition-transform duration-500 dark:-rotate-90 dark:scale-0" />
