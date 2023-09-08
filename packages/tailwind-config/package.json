@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
-    "@iconify-json/lucide": "^1.1.122",
+    "@iconify-json/lucide": "^1.1.125",
     "@iconify-json/mdi": "^1.1.54",
-    "@iconify-json/simple-icons": "^1.1.68",
-    "@tailwindcss/typography": "^0.5.9",
+    "@iconify-json/simple-icons": "^1.1.69",
+    "@tailwindcss/typography": "^0.5.10",
     "tailwindcss-animate": "^1.0.7"
   },
   "peerDependencies": {
