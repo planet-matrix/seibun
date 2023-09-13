@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-next",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "hyoban's eslint config for Next.js",
   "repository": {
     "type": "git",
