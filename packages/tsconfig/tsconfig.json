@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
-    // "alwaysStrict": true,
-    // "noImplicitAny": true,
-    // "noImplicitThis": true,
-    // "strictBindCallApply": true,
-    // "strictFunctionTypes": true,
-    // "strictNullChecks": true,
-    // "strictPropertyInitialization": true,
-    // "useUnknownInCatchVariables": true,
-    "strict": true,
+    // https://twitter.com/mattpocockuk/status/1701619240686485799
 
+    /* Base Options: */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "target": "ES2020",
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+
+    /* Strictness */
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     // disable
@@ -22,17 +28,24 @@
     // disable
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    // "alwaysStrict": true,
+    // "noImplicitAny": true,
+    // "noImplicitThis": true,
+    // "strictBindCallApply": true,
+    // "strictFunctionTypes": true,
+    // "strictNullChecks": true,
+    // "strictPropertyInitialization": true,
+    // "useUnknownInCatchVariables": true,
+    "strict": true,
 
-    "skipLibCheck": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "target": "ES2020",
-    "module": "ESNext",
+    /* NOT transpiling with TypeScript: */
     "moduleResolution": "Bundler",
-    "jsx": "react-jsx",
-    "resolveJsonModule": true,
+    "module": "ESNext",
+    "noEmit": true,
+
+    /* Code runs in the DOM: */
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "useDefineForClassFields": true,
-    "esModuleInterop": true
+
+    "jsx": "react-jsx"
   }
 }
