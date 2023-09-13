@@ -55,7 +55,7 @@ importers:
         specifier: 1.0.0-rc.4
         version: 1.0.0-rc.4(@algolia/client-search@4.19.1)(@types/node@20.6.0)(search-insights@2.8.1)
 
-  apps/next:
+  apps/next-demo:
     dependencies:
       '@hyoban/components':
         specifier: workspace:^
@@ -107,7 +107,7 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  apps/vite:
+  apps/vite-demo:
     dependencies:
       '@hyoban/components':
         specifier: workspace:^
