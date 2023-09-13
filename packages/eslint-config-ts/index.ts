@@ -15,7 +15,7 @@ export default {
     "!*.tsx",
     "!*.ts",
   ],
-  plugins: ["@typescript-eslint", "import", "@cspell"],
+  plugins: ["@typescript-eslint", "import", "unused-imports", "@cspell"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     tsconfigRootDir: process.cwd(),
@@ -27,13 +27,23 @@ export default {
   },
   root: true,
   rules: {
-    // https://vitejs.dev/guide/features.html#typescript
-    "@typescript-eslint/consistent-type-imports": "error",
+    "no-console": "warn",
 
-    // ts config
-    // TypeScript provides noUnusedLocals and noUnusedParameters compiler options
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        vars: "all",
+        varsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
+      },
+    ],
+
+    // https://vitejs.dev/guide/features.html#typescript
+    "@typescript-eslint/consistent-type-imports": "error",
 
     // formatting
     "prefer-template": "warn",
