@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "build": "nx run-many --target=build --projects=@hyoban/*",
+    "build:docs": "nx run docs:build",
+    "build:next-demo": "nx run next-demo:build",
+    "build:vite-demo": "nx run vite-demo:build",
     "format": "prettier --cache --write .",
     "release": "bumpp -r"
   },
