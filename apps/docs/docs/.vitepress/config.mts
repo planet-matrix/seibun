@@ -21,4 +21,7 @@ export default defineConfig({
     ],
   },
   cleanUrls: true,
+  markdown: {
+    theme: "poimandres",
+  },
 })

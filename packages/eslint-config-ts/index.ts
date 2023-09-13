@@ -27,8 +27,6 @@ export default {
   },
   root: true,
   rules: {
-    "no-console": "warn",
-
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
@@ -41,6 +39,10 @@ export default {
         argsIgnorePattern: "^_",
       },
     ],
+    "@cspell/spellchecker": offInEditor,
+
+    //#region snippet
+    "no-console": "warn",
 
     // https://vitejs.dev/guide/features.html#typescript
     "@typescript-eslint/consistent-type-imports": "error",
@@ -49,7 +51,6 @@ export default {
     "prefer-template": "warn",
 
     "import/no-anonymous-default-export": "warn",
-
-    "@cspell/spellchecker": offInEditor,
+    //#endregion snippet
   },
 }

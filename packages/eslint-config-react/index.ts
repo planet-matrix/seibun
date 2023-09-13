@@ -18,19 +18,18 @@ export default {
     },
   },
   rules: {
-    // https://twitter.com/Brooooook_lyn/status/1666637274757595141
-    "react/jsx-no-leaked-render": "error",
-
-    // tailwind
+    "react-refresh/only-export-components": "warn",
     "tailwindcss/classnames-order": "off",
     "tailwindcss/no-custom-classname": "warn",
 
-    "react/prop-types": "off",
+    //#region snippet
+    // https://twitter.com/Brooooook_lyn/status/1666637274757595141
+    "react/jsx-no-leaked-render": "error",
 
-    // dev
-    "react-refresh/only-export-components": "warn",
+    "react/prop-types": "off",
 
     // formatting
     "react/jsx-curly-brace-presence": ["warn", "never"],
+    //#endregion snippet
   },
 }
