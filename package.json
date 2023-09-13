@@ -5,7 +5,6 @@
   "scripts": {
     "build": "nx run-many --target=build --projects=@hyoban/*",
     "format": "prettier --cache --write .",
-    "prepare": "pnpm run build",
     "release": "bumpp -r"
   },
   "prettier": "./packages/prettier-config/dist/index.cjs",
