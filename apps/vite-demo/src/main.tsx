@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"
 
 import App from "~/App"
 
-import "@hyoban/components/css"
+import "@hyoban/components/index.css"
 import "@hyoban/tailwind-config/globals.css"
 
 const root = document.getElementById("root")
