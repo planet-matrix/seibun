@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
-    "@iconify-json/lucide": "^1.1.126",
+    "@iconify-json/lucide": "^1.1.128",
     "@iconify-json/mdi": "^1.1.54",
-    "@iconify-json/simple-icons": "^1.1.70",
+    "@iconify-json/simple-icons": "^1.1.71",
     "@tailwindcss/typography": "^0.5.10",
     "tailwindcss-animate": "^1.0.7"
   },
