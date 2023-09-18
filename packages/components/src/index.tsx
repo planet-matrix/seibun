@@ -70,7 +70,10 @@ export function AppearanceSwitch(
             }
           : toggleDark
       }
-      className={cn("flex text-2xl", props.className)}
+      className={cn(
+        "flex text-[1.5rem] text-teal-600 transition-colors",
+        props.className,
+      )}
     >
       <div
         className={cn(
