@@ -1,4 +1,9 @@
-import { AppearanceSwitch, Button, Input } from "@hyoban/components"
+import {
+  AppearanceSwitch,
+  Button,
+  Input,
+  TailwindIndicator,
+} from "@hyoban/components"
 
 export default function App() {
   return (
@@ -19,6 +24,7 @@ export default function App() {
         </p>
       </main>
       <AppearanceSwitch className="mt-10" enableTransition />
+      <TailwindIndicator />
     </div>
   )
 }

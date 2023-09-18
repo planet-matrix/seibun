@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { ThemeProvider } from "@hyoban/components"
+import { TailwindIndicator, ThemeProvider } from "@hyoban/components"
 
 import "@hyoban/components/index.css"
 import "@hyoban/tailwind-config/globals.css"
@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <TailwindIndicator />
       </body>
     </html>
   )
