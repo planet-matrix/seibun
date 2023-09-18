@@ -10,7 +10,7 @@ export default {
     "!*.tsx",
     "!*.ts",
   ],
-  plugins: ["@typescript-eslint", "import", "unused-imports", "@cspell"],
+  plugins: ["@typescript-eslint"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     tsconfigRootDir: process.cwd(),
@@ -24,28 +24,9 @@ export default {
   rules: {
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",
-    "unused-imports/no-unused-imports": "warn",
-    "unused-imports/no-unused-vars": [
-      "warn",
-      {
-        vars: "all",
-        varsIgnorePattern: "^_",
-        args: "after-used",
-        argsIgnorePattern: "^_",
-      },
-    ],
-    "@cspell/spellchecker": "error",
 
     //#region snippet
     "no-console": "warn",
-
-    // https://vitejs.dev/guide/features.html#typescript
-    "@typescript-eslint/consistent-type-imports": "error",
-
-    // formatting
-    "prefer-template": "warn",
-
-    "import/no-anonymous-default-export": "warn",
     //#endregion snippet
   },
 }

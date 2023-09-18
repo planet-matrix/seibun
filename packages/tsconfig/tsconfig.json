@@ -25,9 +25,8 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    // disable
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     // "alwaysStrict": true,
     // "noImplicitAny": true,
     // "noImplicitThis": true,
