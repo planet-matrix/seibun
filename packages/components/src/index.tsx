@@ -110,7 +110,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 const isProduction = import.meta.env?.MODE
   ? import.meta.env.MODE === "production"
-  : process.env.NODE_ENV === "production"
+  : process.env["NODE_ENV"] === "production"
 
 export function TailwindIndicator() {
   if (isProduction) return null
