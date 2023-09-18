@@ -1,8 +1,3 @@
-const isInEditor =
-  (process.env["VSCODE_PID"] || process.env["JETBRAINS_IDE"]) &&
-  !process.env["CI"]
-const offInEditor = isInEditor ? "off" : "error"
-
 export default {
   extends: [
     "eslint:recommended",
@@ -39,7 +34,7 @@ export default {
         argsIgnorePattern: "^_",
       },
     ],
-    "@cspell/spellchecker": offInEditor,
+    "@cspell/spellchecker": "error",
 
     //#region snippet
     "no-console": "warn",
