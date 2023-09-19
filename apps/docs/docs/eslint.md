@@ -53,9 +53,7 @@ ni -D eslint @hyoban/eslint-config-react
 
 1. 使用 [typescript-eslint][] `strict-type-checked` 预设
 1. 添加 [eslint-config-prettier][] 预设，处理 prettier 和 eslint 的冲突
-1. 使用 [eslint-plugin-unused-imports][] 来自动移除未使用的 import 和变量
-1. 添加 [cspell][] 插件，处理拼写检查
-   1. 在编辑器中关闭，假定你已经安装了 [Code Spell Checker][] 插件
+1. 假定配合 [tsconfig](tsconfig.md) 使用
 
 ::: details 其它开启的规则
 <<< ../../../packages/eslint-config-ts/index.ts#snippet
@@ -80,9 +78,6 @@ ni -D eslint @hyoban/eslint-config-react
 
 [typescript-eslint]: https://github.com/typescript-eslint/typescript-eslint
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
-[eslint-plugin-unused-imports]: https://github.com/sweepline/eslint-plugin-unused-imports
-[cspell]: https://github.com/streetsidesoftware/cspell
-[Code Spell Checker]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [eslint-plugin-tailwindcss]: https://github.com/francoismassart/eslint-plugin-tailwindcss
 [eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
 [eslint-plugin-react]: https://github.com/jsx-eslint/eslint-plugin-react
