@@ -14,11 +14,7 @@ export default {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     tsconfigRootDir: process.cwd(),
-    project: [
-      "./tsconfig.json",
-      "./packages/*/tsconfig.json",
-      "./apps/*/tsconfig.json",
-    ],
+    project: true,
   },
   root: true,
   rules: {
