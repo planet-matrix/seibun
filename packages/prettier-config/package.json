@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/prettier-config",
-  "version": "6.3.8",
+  "version": "7.0.0",
   "description": "hyoban's prettier config",
   "repository": {
     "type": "git",

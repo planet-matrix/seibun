@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/vite-config",
-  "version": "6.3.8",
+  "version": "7.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/hyoban/config",
