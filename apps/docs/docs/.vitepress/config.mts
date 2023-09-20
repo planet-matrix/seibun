@@ -2,7 +2,8 @@ import { defineConfig } from "vitepress"
 
 export default defineConfig({
   title: "Hyoban's Config",
-  description: "My personal config to start a new project.",
+  description: "Hyoban 开启一个新项目的起手配置",
+  lang: "zh-CN",
   themeConfig: {
     sidebar: [
       { text: "Prettier", link: "/prettier" },
