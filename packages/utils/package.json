@@ -31,7 +31,7 @@
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.21"
+    "@types/react": "^18.2.22"
   },
   "peerDependencies": {
     "react": "^18.2.0",
