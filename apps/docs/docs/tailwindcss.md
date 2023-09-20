@@ -37,6 +37,6 @@ import "@hyoban/tailwind-config/globals.css"
 
 ## 配置详情
 
-1. 基于 [shandcn ui](https://ui.shadcn.com) 的 tailwind css 配置
+1. 基于 [shandcn ui](https://ui.shadcn.com/docs/installation/manual#configure-tailwindconfigjs) 的 tailwind css 配置
 1. 预置 [tailwindcss icons](https://github.com/egoist/tailwindcss-icons) 插件和 lucide、mdi、simple-icons 图标库
 1. 预置 [tailwindcss typography](https://tailwindcss.com/docs/typography-plugin) 插件

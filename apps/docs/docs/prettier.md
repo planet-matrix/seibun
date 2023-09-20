@@ -10,7 +10,7 @@ ni -D prettier @hyoban/prettier-config
 
 在 `package.json` 中添加如下内容，如果你不需要格式化 astro，请移除 `**/*.astro` 。
 
-```json
+```json{3,5}
 {
   "scripts": {
     "format": "prettier --cache --write **/*.astro ."
@@ -35,6 +35,10 @@ ni -D prettier @hyoban/prettier-config
 ```
 
 得益于 Prettier 3.0 默认忽略 `.gitignore` 中指定的文件，大多数情况下你不需要创建 `.prettierignore` 文件。
+
+::: warning
+monorepo 中深层文件夹下的 `.gitignore` 文件不包括在内。
+:::
 
 ## 配置详情
 
