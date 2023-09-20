@@ -57,12 +57,12 @@ export function AppearanceSwitch(
     enableTransition?: boolean
   },
 ) {
-  const { enableTransition = false } = props
+  const { enableTransition = false, ...rest } = props
   const { isDark, toggleDark } = useDark()
 
   return (
     <button
-      {...props}
+      {...rest}
       onClick={
         enableTransition
           ? (e) => {
