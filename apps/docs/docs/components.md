@@ -59,6 +59,10 @@ export default function RootLayout({
 }
 ```
 
+### TailwindIndicator
+
+在开发时显示当前屏幕尺寸断点，不会显示到生产环境中。
+
 ### 包含的 shandcn ui 组件
 
 1. [Button](https://ui.shadcn.com/docs/components/button)
