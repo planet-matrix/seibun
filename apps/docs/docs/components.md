@@ -2,17 +2,13 @@
 
 ## 快速使用
 
-安装依赖
-
 ```sh
 ni -D @hyoban/components
 ```
 
-在入口引入样式文件
-
-```ts
-import "@hyoban/components/css"
-```
+::: warning
+你需要结合 `@hyoban/tailwind-config` 一同使用
+:::
 
 ## 组件列表
 
@@ -28,7 +24,7 @@ function Page() {
 
 `enableTransition` 表示使用 View Transition API 来进行动画过渡。
 
-对于 Vite，在 `index.html` 中注入如下脚本来出来闪烁。
+对于 Vite，在 `index.html` 中注入如下脚本来处理页面首次加载闪烁。
 
 ```html
 <script>
