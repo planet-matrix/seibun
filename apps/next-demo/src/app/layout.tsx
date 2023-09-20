@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { TailwindIndicator, ThemeProvider } from "@hyoban/components"
 
-import "@hyoban/components/index.css"
 import "@hyoban/tailwind-config/globals.css"
 
 export const metadata: Metadata = {
