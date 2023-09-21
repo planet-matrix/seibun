@@ -1,8 +1,11 @@
-import { AppearanceSwitch, TailwindIndicator } from "@hyoban/components"
-import { Button } from "@hyoban/components/button"
-import { Checkbox } from "@hyoban/components/checkbox"
-import { Input } from "@hyoban/components/input"
-import { Separator } from "@hyoban/components/separator"
+import {
+  AppearanceSwitch,
+  Button,
+  Checkbox,
+  Input,
+  Separator,
+  TailwindIndicator,
+} from "@hyoban/components"
 
 export function CheckboxDemo() {
   return (

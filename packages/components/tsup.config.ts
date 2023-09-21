@@ -1,10 +1,11 @@
 import { defineConfig } from "tsup"
 
 export default defineConfig({
-  entry: ["src/index.tsx", "src/**/index.tsx"],
+  entry: ["src/**/*.ts", "src/**/*.tsx"],
   external: ["react"],
   dts: true,
   format: ["esm", "cjs"],
+  splitting: true,
   injectStyle: true,
   esbuildOptions(options) {
     options.banner = {
