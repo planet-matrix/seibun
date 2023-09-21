@@ -25,7 +25,7 @@ ni -D eslint @hyoban/eslint-config-react
 ```json
 {
   "scripts": {
-    "lint": "eslint --fix ."
+    "lint": "eslint ."
   },
   "eslintConfig": {
     "extends": "@hyoban/eslint-config-react"

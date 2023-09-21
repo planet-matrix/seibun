@@ -15,6 +15,8 @@ import path from "node:path"
 import { defineConfig } from "vite"
 import config from "@hyoban/vite-config"
 
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
+
 export default defineConfig({
   ...config,
   resolve: {
