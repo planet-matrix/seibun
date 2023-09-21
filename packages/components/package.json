@@ -12,6 +12,31 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./button": {
+      "require": "./dist/button/index.cjs",
+      "import": "./dist/button/index.js",
+      "types": "./dist/button/index.d.ts"
+    },
+    "./checkbox": {
+      "require": "./dist/checkbox/index.cjs",
+      "import": "./dist/checkbox/index.js",
+      "types": "./dist/checkbox/index.d.ts"
+    },
+    "./input": {
+      "require": "./dist/input/index.cjs",
+      "import": "./dist/input/index.js",
+      "types": "./dist/input/index.d.ts"
+    },
+    "./label": {
+      "require": "./dist/label/index.cjs",
+      "import": "./dist/label/index.js",
+      "types": "./dist/label/index.d.ts"
+    },
+    "./separator": {
+      "require": "./dist/separator/index.cjs",
+      "import": "./dist/separator/index.js",
+      "types": "./dist/separator/index.d.ts"
     }
   },
   "main": "./dist/index.cjs",
