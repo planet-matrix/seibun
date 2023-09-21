@@ -1,8 +1,6 @@
 import { cn } from "@hyoban/utils"
 import { useDark } from "@hyoban/utils/hooks"
 
-import "./index.css"
-
 /**
  * Credit to [@hooray](https://github.com/hooray)
  * @see https://github.com/vuejs/vitepress/pull/2347
