@@ -6,6 +6,20 @@ import {
   TailwindIndicator,
 } from "@hyoban/components"
 
+export function CheckboxDemo() {
+  return (
+    <div className="flex items-center space-x-2">
+      <Checkbox id="terms2" />
+      <label
+        htmlFor="terms2"
+        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      >
+        Accept terms and conditions
+      </label>
+    </div>
+  )
+}
+
 export default function App() {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
@@ -23,12 +37,9 @@ export default function App() {
         <p className="flex items-center gap-x-4">
           <Input placeholder="placeholder" />
         </p>
-        <h2>Checkbox</h2>
-        <p className="flex items-center gap-x-4">
-          <Checkbox />
-          <Checkbox checked />
-          <Checkbox disabled />
-          <Checkbox checked disabled />
+        <h2>Checkbox & Label</h2>
+        <p>
+          <CheckboxDemo />
         </p>
       </main>
       <AppearanceSwitch className="mt-10" enableTransition />
