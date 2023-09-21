@@ -12,16 +12,6 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./button": {
-      "require": "./dist/button/index.cjs",
-      "import": "./dist/button/index.js",
-      "types": "./dist/button/index.d.ts"
-    },
-    "./input": {
-      "require": "./dist/input/index.cjs",
-      "import": "./dist/input/index.js",
-      "types": "./dist/input/index.d.ts"
     }
   },
   "main": "./dist/index.cjs",
@@ -33,6 +23,7 @@
   },
   "dependencies": {
     "@hyoban/utils": "workspace:*",
+    "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0"
   },

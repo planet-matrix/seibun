@@ -1,6 +1,7 @@
 import {
   AppearanceSwitch,
   Button,
+  Checkbox,
   Input,
   TailwindIndicator,
 } from "@hyoban/components"
@@ -21,6 +22,13 @@ export default function App() {
         <h2>Input</h2>
         <p className="flex items-center gap-x-4">
           <Input placeholder="placeholder" />
+        </p>
+        <h2>Checkbox</h2>
+        <p className="flex items-center gap-x-4">
+          <Checkbox />
+          <Checkbox checked />
+          <Checkbox disabled />
+          <Checkbox checked disabled />
         </p>
       </main>
       <AppearanceSwitch className="mt-10" enableTransition />
