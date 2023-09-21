@@ -3,6 +3,7 @@ import {
   Button,
   Checkbox,
   Input,
+  Separator,
   TailwindIndicator,
 } from "@hyoban/components"
 
@@ -41,6 +42,8 @@ export default function App() {
         <p>
           <CheckboxDemo />
         </p>
+        <h2>Separator</h2>
+        <Separator orientation="horizontal" />
       </main>
       <AppearanceSwitch className="mt-10" enableTransition />
       <TailwindIndicator />
