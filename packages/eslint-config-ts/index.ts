@@ -23,6 +23,16 @@ export default {
 
     //#region snippet
     "no-console": "warn",
+
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        checksVoidReturn: {
+          arguments: false,
+          attributes: false,
+        },
+      },
+    ],
     //#endregion snippet
   },
 }
