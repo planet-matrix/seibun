@@ -2,6 +2,7 @@ import * as fs from "node:fs"
 import type { FlatESLintConfigItem } from "eslint-define-config"
 
 import {
+  ignores,
   next,
   prettier,
   react,
@@ -18,6 +19,7 @@ export function hyoban() {
   const isUsingFastRefresh = isUsingReact && isUsingVite && !isUsingNext
 
   const configs: FlatESLintConfigItem[] = [
+    ...ignores,
     ...typescript(),
     ...(isUsingTailwind ? tailwind() : []),
     ...(isUsingReact ? react() : []),

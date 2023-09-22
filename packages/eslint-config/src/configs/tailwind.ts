@@ -1,13 +1,12 @@
 import type { FlatESLintConfigItem } from "eslint-define-config"
 
-import { GLOB_EXCLUDE, GLOB_TS, GLOB_TSX } from "../globs"
+import { GLOB_TS, GLOB_TSX } from "../globs"
 import { pluginTailwindcss } from "../plugins"
 
 export function tailwind(): FlatESLintConfigItem[] {
   return [
     {
       files: [GLOB_TS, GLOB_TSX],
-      ignores: GLOB_EXCLUDE,
       plugins: {
         tailwindcss: pluginTailwindcss,
       },

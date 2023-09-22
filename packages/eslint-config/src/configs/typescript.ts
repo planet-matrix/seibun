@@ -1,7 +1,7 @@
 import process from "node:process"
 import type { FlatESLintConfigItem } from "eslint-define-config"
 
-import { GLOB_EXCLUDE, GLOB_TS, GLOB_TSX } from "../globs"
+import { GLOB_TS, GLOB_TSX } from "../globs"
 import { parserTs, pluginTs } from "../plugins"
 
 export function typescript(): FlatESLintConfigItem[] {
@@ -10,7 +10,6 @@ export function typescript(): FlatESLintConfigItem[] {
   return [
     {
       files: [GLOB_TS, GLOB_TSX],
-      ignores: GLOB_EXCLUDE,
       languageOptions: {
         parser: parserTs,
         parserOptions: {
