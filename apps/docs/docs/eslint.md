@@ -53,15 +53,13 @@ export default hyoban()
 此预设会按照当前环境自动使用合适的规则。
 比如，如果是纯 TS 项目，则不会有 react 的相关规则。
 
+1. 假定配合 [tsconfig](tsconfig.md) 使用
 1. 使用 [typescript-eslint][] `strict-type-checked` 预设
 1. 添加 [eslint-config-prettier][] 预设，处理 prettier 和 eslint 的冲突
-1. 假定配合 [tsconfig](tsconfig.md) 使用
 1. 添加 [eslint-plugin-tailwindcss][] 插件，校验 className 是否为 tailwindcss 的有效类名
 1. 添加 [eslint-plugin-jsx-a11y][], [eslint-plugin-react][], [eslint-plugin-react-hooks][] 等相关插件，校验 react jsx 代码
 1. 添加 [eslint-plugin-react-refresh][]，校验 Vite 环境中组件的热更新效果
-1. 基于 eslint-config-react 预设
 1. 添加 [eslint-plugin-next][] 插件，校验 Next.js 环境中的代码
-1. 禁用 `react-refresh/only-export-components`
 
 [typescript-eslint]: https://github.com/typescript-eslint/typescript-eslint
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
