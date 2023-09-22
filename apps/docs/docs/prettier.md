@@ -8,20 +8,20 @@ ni -D prettier @hyoban/prettier-config
 
 ## 添加设置
 
-在 `package.json` 中添加如下内容，如果你不需要格式化 astro，请移除 `**/*.astro` 。
+::: code-group
 
-```json{3,5}
+```jsonc package.json
 {
   "scripts": {
+    "format": "prettier --cache --write .",
+    // for astro
     "format": "prettier --cache --write **/*.astro ."
   },
   "prettier": "@hyoban/prettier-config"
 }
 ```
 
-在 `.vscode/settings.json` 中添加如下内容。
-
-```json
+```json [.vscode/settings.json]
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -34,11 +34,10 @@ ni -D prettier @hyoban/prettier-config
 }
 ```
 
-得益于 Prettier 3.0 默认忽略 `.gitignore` 中指定的文件，大多数情况下你不需要创建 `.prettierignore` 文件。
-
-::: warning
-monorepo 中深层文件夹下的 `.gitignore` 文件不包括在内。
 :::
+
+得益于 Prettier 3.0 默认忽略 `.gitignore` 中指定的文件，大多数情况下你不需要创建 `.prettierignore` 文件。
+monorepo 中深层文件夹下的 `.gitignore` 文件不包括在内。
 
 ## 配置详情
 
