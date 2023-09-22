@@ -7,13 +7,10 @@
     "build": "tsc && vite build",
     "dev": "vite",
     "format": "prettier --cache --write  .",
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "prettier": "@hyoban/prettier-config",
-  "eslintConfig": {
-    "extends": "@hyoban/eslint-config-react"
-  },
   "dependencies": {
     "@hyoban/components": "workspace:^",
     "@hyoban/utils": "workspace:^",
@@ -21,7 +18,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@hyoban/eslint-config-react": "workspace:*",
+    "@hyoban/eslint-config": "workspace:*",
     "@hyoban/prettier-config": "workspace:^",
     "@hyoban/tailwind-config": "workspace:*",
     "@hyoban/tsconfig": "workspace:*",

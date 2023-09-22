@@ -6,11 +6,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
+    "lint": "eslint .",
     "start": "next start"
-  },
-  "eslintConfig": {
-    "extends": "@hyoban/eslint-config-next"
   },
   "dependencies": {
     "@hyoban/components": "workspace:^",
@@ -20,7 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@hyoban/eslint-config-next": "workspace:^",
+    "@hyoban/eslint-config": "workspace:^",
     "@hyoban/tailwind-config": "workspace:^",
     "@hyoban/tsconfig": "workspace:^",
     "@types/node": "^20.6.2",
