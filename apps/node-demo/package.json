@@ -1,0 +1,18 @@
+{
+  "name": "node-demo",
+  "private": true,
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@hyoban/eslint-config": "workspace:^",
+    "@hyoban/tsconfig": "workspace:^",
+    "eslint": "^8.49.0",
+    "typescript": "^5.2.2"
+  }
+}
