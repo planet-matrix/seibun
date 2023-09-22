@@ -1,77 +1,64 @@
 # ESLint
 
-## 快速使用
-
-::: tip
-移除项目预置 ESLint 配置和依赖（如果有）
-:::
-
-### 安装依赖
-
-取决于你在写纯 React 还是 Next.js 项目，安装不同的预设。
+## 安装依赖
 
 ```sh
 ni -D eslint @hyoban/eslint-config-react
 ```
 
-### 添加配置
+## 添加配置
 
 ::: tip
 需要注意，默认配置中只对 ts 和 tsx 文件进行检查。
+
+如果创建的项目处于 monorepo 中，需要添加正确的 `eslint.workingDirectories` 配置。
 :::
 
-添加脚本和要使用的预设到你的 `package.json`。
+::: code-group
 
-```json
+```json [package.json]
 {
   "scripts": {
     "lint": "eslint ."
-  },
-  "eslintConfig": {
-    "extends": "@hyoban/eslint-config-react"
   }
 }
 ```
 
-添加 vscode 设置到 `.vscode/settings.json`。
-如果创建的项目处于 monorepo 中，需要添加正确的 `eslint.workingDirectories` 配置。
+```js [eslint.config.js]
+import hyoban from "@hyoban/eslint-config"
 
-```json
+export default hyoban()
+```
+
+```json [.vscode/settings.json]
 {
+  "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "eslint.validate": ["typescript", "typescriptreact"],
 
   // optional
-  "eslint.workingDirectories": ["./packages/web"]
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" }
+  ]
 }
 ```
 
+:::
+
 ## 配置详情
 
-### eslint-config-ts
+此预设会按照当前环境自动使用合适的规则。
+比如，如果是纯 TS 项目，则不会有 react 的相关规则。
 
 1. 使用 [typescript-eslint][] `strict-type-checked` 预设
 1. 添加 [eslint-config-prettier][] 预设，处理 prettier 和 eslint 的冲突
 1. 假定配合 [tsconfig](tsconfig.md) 使用
-
-::: details 其它开启的规则
-<<< ../../../packages/eslint-config-ts/index.ts#snippet
-:::
-
-### eslint-config-react
-
-1. 基于 eslint-config-ts 预设
 1. 添加 [eslint-plugin-tailwindcss][] 插件，校验 className 是否为 tailwindcss 的有效类名
 1. 添加 [eslint-plugin-jsx-a11y][], [eslint-plugin-react][], [eslint-plugin-react-hooks][] 等相关插件，校验 react jsx 代码
 1. 添加 [eslint-plugin-react-refresh][]，校验 Vite 环境中组件的热更新效果
-
-::: details 其它开启的规则
-<<< ../../../packages/eslint-config-react/index.ts#snippet
-:::
-
-### eslint-config-next
-
 1. 基于 eslint-config-react 预设
 1. 添加 [eslint-plugin-next][] 插件，校验 Next.js 环境中的代码
 1. 禁用 `react-refresh/only-export-components`
