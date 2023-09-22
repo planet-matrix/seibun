@@ -27,7 +27,8 @@
       "lucide",
       "hyoban",
       "clsx",
-      "tailwindcss"
+      "tailwindcss",
+      "astro"
     ]
   },
   "pnpm": {
