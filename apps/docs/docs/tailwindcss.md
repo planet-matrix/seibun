@@ -4,7 +4,7 @@
 
 ### 配置 pnpm hoist 规则
 
-在 `.npmrc` 中添加以下内容：
+在 `.npmrc` 中添加以下内容
 
 ```ini
 public-hoist-pattern[]=*eslint*
@@ -18,15 +18,16 @@ public-hoist-pattern[]=@iconify*
 
 ```bash
 ni -D tailwindcss postcss autoprefixer @hyoban/tailwind-config
-npx tailwindcss init -p
+npx tailwindcss init --ts
 ```
 
-### 重命名配置文件
+### 加载配置
 
-重命名 `tailwind.config.js` 为 `tailwind.config.cjs`，并修改 `tailwind.config.cjs` 内容为：
+```js
+// tailwind.config.ts
+import config from "@hyoban/tailwind-config"
 
-```js filename="tailwind.config.cjs"
-module.exports = require("@hyoban/tailwind-config")
+export default config
 ```
 
 ### 引入样式文件
