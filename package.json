@@ -12,7 +12,7 @@
   },
   "prettier": "./packages/prettier-config/prettier.config.js",
   "devDependencies": {
-    "@types/node": "^20.6.2",
+    "@types/node": "^20.6.3",
     "bumpp": "^9.2.0",
     "nx": "16.8.1",
     "prettier": "^3.0.3",
