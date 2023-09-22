@@ -1,7 +1,5 @@
-import type { Config } from "prettier"
-import type { PluginConfig } from "@ianvs/prettier-plugin-sort-imports"
-
-export default {
+/** @type {import("prettier").Config} */
+const config = {
   semi: false,
   plugins: [
     "prettier-plugin-packagejson",
@@ -38,4 +36,6 @@ export default {
     "",
     "^[./]",
   ],
-} satisfies Config & PluginConfig
+}
+
+export default config

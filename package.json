@@ -10,7 +10,7 @@
     "format": "prettier --cache --write .",
     "release": "bumpp -r"
   },
-  "prettier": "./packages/prettier-config/dist/index.cjs",
+  "prettier": "./packages/prettier-config/prettier.config.js",
   "devDependencies": {
     "@types/node": "^20.6.2",
     "bumpp": "^9.2.0",

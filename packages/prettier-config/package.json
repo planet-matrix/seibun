@@ -9,13 +9,11 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.cjs",
+  "main": "prettier.config.js",
   "files": [
-    "dist"
+    "prettier.config.js"
   ],
-  "scripts": {
-    "build": "tsup index.ts --format cjs --treeshake --clean"
-  },
+  "scripts": {},
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
     "prettier-plugin-astro": "^0.12.0",
