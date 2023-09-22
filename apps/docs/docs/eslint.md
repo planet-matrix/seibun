@@ -3,7 +3,7 @@
 ## 安装依赖
 
 ```sh
-ni -D eslint @hyoban/eslint-config-react
+ni -D eslint @hyoban/eslint-config
 ```
 
 ## 添加配置
