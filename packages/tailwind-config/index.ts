@@ -1,8 +1,6 @@
 import type { Config } from "tailwindcss"
-// @ts-ignore
 import tailwindAnimatePlugin from "tailwindcss-animate"
-// @ts-ignore
-import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons"
+import { getIconCollections, iconsPlugin } from "@hyoban/tailwindcss-icons"
 import tailwindTypographyPlugin from "@tailwindcss/typography"
 
 export default {
