@@ -10,7 +10,6 @@ export default defineConfig({
       { text: "Tailwind CSS", link: "/tailwindcss" },
       { text: "ESLint", link: "/eslint" },
       { text: "TS Config", link: "/tsconfig" },
-      { text: "Vite", link: "/vite" },
       { text: "Components", link: "/components" },
     ],
     socialLinks: [
