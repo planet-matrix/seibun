@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config",
-  "version": "7.1.4",
+  "version": "8.0.0",
   "description": "hyoban's eslint config preset",
   "repository": {
     "type": "git",
