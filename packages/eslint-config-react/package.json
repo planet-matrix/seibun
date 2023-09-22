@@ -1,6 +1,6 @@
 {
   "name": "@hyoban/eslint-config-react",
-  "version": "8.0.1",
+  "version": "8.0.2",
   "description": "hyoban's eslint config for react",
   "repository": {
     "type": "git",
