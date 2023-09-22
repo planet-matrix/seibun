@@ -1,9 +1,9 @@
 import path from "node:path"
 import { defineConfig } from "vite"
-import config from "@hyoban/vite-config"
+import react from "@vitejs/plugin-react-swc"
 
 export default defineConfig({
-  ...config,
+  plugins: [react()],
   resolve: {
     alias: [
       {
