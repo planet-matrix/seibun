@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
 import tailwindAnimatePlugin from "tailwindcss-animate"
-import { getIconCollections, iconsPlugin } from "@hyoban/tailwindcss-icons"
+import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons"
 import tailwindTypographyPlugin from "@tailwindcss/typography"
 
 export default {
@@ -82,9 +82,7 @@ export default {
     tailwindAnimatePlugin,
     iconsPlugin({
       collections: getIconCollections(["mdi", "lucide", "simple-icons"]),
-      options: {
-        size: 1.5,
-      },
+      scale: 1.5,
     }),
   ],
 } satisfies Config

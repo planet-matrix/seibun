@@ -28,7 +28,7 @@
     "build": "tsup index.ts --format esm,cjs --dts --treeshake --clean"
   },
   "dependencies": {
-    "@hyoban/tailwindcss-icons": "^0.0.7",
+    "@egoist/tailwindcss-icons": "^1.2.0",
     "@iconify-json/lucide": "^1.1.129",
     "@iconify-json/mdi": "^1.1.54",
     "@iconify-json/simple-icons": "^1.1.71",

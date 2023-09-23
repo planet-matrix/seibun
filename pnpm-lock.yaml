@@ -286,9 +286,9 @@ importers:
 
   packages/tailwind-config:
     dependencies:
-      '@hyoban/tailwindcss-icons':
-        specifier: ^0.0.7
-        version: 0.0.7(tailwindcss@3.3.3)
+      '@egoist/tailwindcss-icons':
+        specifier: ^1.2.0
+        version: 1.2.0(tailwindcss@3.3.3)
       '@iconify-json/lucide':
         specifier: ^1.1.129
         version: 1.1.129
@@ -750,6 +750,17 @@ packages:
       - '@algolia/client-search'
     dev: true
 
+  /@egoist/tailwindcss-icons@1.2.0(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-rEnRIB3j6kHc9w5f2B7K0/urojTHQo3CEhCgEx0aLddne5iir3YiyF/rwZ2W+dmvDlQqm6AMrO82oCFYpCTaCA==}
+    peerDependencies:
+      tailwindcss: '*'
+    dependencies:
+      '@iconify/utils': 2.1.10
+      tailwindcss: 3.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@esbuild/android-arm64@0.18.20:
     resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
     engines: {node: '>=12'}
@@ -1014,17 +1025,6 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
-
-  /@hyoban/tailwindcss-icons@0.0.7(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-5GQfwizlFImP8z1hIaagZdEHi6YkZwOXDkBoQkwFbDnls0JeVD2goZ2hObOzEYQQ1DVAoD0Cvdlr+FdEerX/Vg==}
-    peerDependencies:
-      tailwindcss: '*'
-    dependencies:
-      '@iconify/utils': 2.1.10
-      tailwindcss: 3.3.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@ianvs/prettier-plugin-sort-imports@4.1.0(prettier@3.0.0):
     resolution: {integrity: sha512-IAXeTLU24k6mRPa6mFbW1qZJ/j0m3OeH44wyijWyr+YqqdNtBnfHxAntOAATS9iDfrT01NesKGsdzqnXdDQa/A==}
