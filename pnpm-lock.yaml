@@ -82,9 +82,6 @@ importers:
       '@hyoban/tailwind-config':
         specifier: workspace:^
         version: link:../../packages/tailwind-config
-      '@hyoban/tsconfig':
-        specifier: workspace:^
-        version: link:../../packages/tsconfig
       '@iconify-json/lucide':
         specifier: ^1.1.129
         version: 1.1.129
@@ -94,6 +91,9 @@ importers:
       '@iconify-json/simple-icons':
         specifier: ^1.1.72
         version: 1.1.72
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@types/node':
         specifier: ^20.6.5
         version: 20.6.5
@@ -124,9 +124,9 @@ importers:
       '@hyoban/eslint-config':
         specifier: workspace:^
         version: link:../../packages/eslint-config
-      '@hyoban/tsconfig':
-        specifier: workspace:^
-        version: link:../../packages/tsconfig
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       eslint:
         specifier: ^8.50.0
         version: 8.50.0
@@ -155,9 +155,6 @@ importers:
       '@hyoban/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@hyoban/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
       '@iconify-json/lucide':
         specifier: ^1.1.129
         version: 1.1.129
@@ -167,6 +164,9 @@ importers:
       '@iconify-json/simple-icons':
         specifier: ^1.1.72
         version: 1.1.72
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@types/react':
         specifier: ^18.2.22
         version: 18.2.22
@@ -231,6 +231,9 @@ importers:
       '@hyoban/tailwind-config':
         specifier: workspace:^
         version: link:../tailwind-config
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@types/react':
         specifier: ^18.2.22
         version: 18.2.22
@@ -286,6 +289,9 @@ importers:
         specifier: '>= 5'
         version: 5.2.2
     devDependencies:
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       eslint-define-config:
         specifier: ^1.23.0
         version: 1.23.0
@@ -304,12 +310,10 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.3.3)
-
-  packages/tsconfig:
-    dependencies:
-      typescript:
-        specifier: '>= 5'
-        version: 5.2.2
+    devDependencies:
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
 
   packages/utils:
     dependencies:
@@ -326,6 +330,9 @@ importers:
         specifier: ^1.14.0
         version: 1.14.0
     devDependencies:
+      '@planet-matrix/tsconfig':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@types/react':
         specifier: ^18.2.22
         version: 18.2.22
@@ -1228,6 +1235,10 @@ packages:
       prettier: '>= 3'
     dependencies:
       prettier: 3.0.3
+    dev: true
+
+  /@planet-matrix/tsconfig@0.1.1:
+    resolution: {integrity: sha512-sUPyzkTEo923hOJ1tIrj6FqBInsGSmCchyGxnKsFiH+A+L58nuZPA+2LAnd7uaf2a8She9rbKcEJFbWe8Is7cw==}
     dev: true
 
   /@radix-ui/primitive@1.0.1:

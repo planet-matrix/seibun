@@ -8,7 +8,6 @@ export default defineConfig({
     sidebar: [
       { text: "Tailwind CSS", link: "/tailwindcss" },
       { text: "ESLint", link: "/eslint" },
-      { text: "TS Config", link: "/tsconfig" },
       { text: "Components", link: "/components" },
     ],
     socialLinks: [

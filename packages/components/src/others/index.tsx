@@ -108,8 +108,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   )
 }
 
+// @ts-expect-error
 const isProduction = import.meta.env?.MODE
-  ? import.meta.env.MODE === "production"
+  ? // @ts-expect-error
+    import.meta.env.MODE === "production"
   : process.env["NODE_ENV"] === "production"
 
 export function TailwindIndicator() {

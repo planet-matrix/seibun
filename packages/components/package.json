@@ -36,7 +36,8 @@
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "@planet-matrix/tsconfig": "^0.1.1"
   },
   "peerDependencies": {
     "@hyoban/components": "workspace:*",

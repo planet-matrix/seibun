@@ -5,7 +5,6 @@ export default defineConfig({
   external: ["react"],
   dts: true,
   format: ["esm", "cjs"],
-  injectStyle: true,
   clean: true,
   esbuildOptions(options) {
     options.banner = {

@@ -1,0 +1,6 @@
+{
+  "extends": "@planet-matrix/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}
