@@ -38,6 +38,8 @@ export function typescript(): FlatESLintConfigItem[] {
             },
           },
         ],
+
+        "@typescript-eslint/no-import-type-side-effects": "error",
       },
     },
   ]
