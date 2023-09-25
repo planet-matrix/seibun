@@ -1,27 +1,13 @@
 # Tailwind CSS
 
-## 快速使用
-
-### 配置 pnpm hoist 规则
-
-在 `.npmrc` 中添加以下内容
-
-```ini
-public-hoist-pattern[]=*eslint*
-public-hoist-pattern[]=*prettier*
-public-hoist-pattern[]=@iconify*
-```
-
-### 安装依赖
-
-安装好 Tailwind CSS 和 Tailwind Config
+## 安装依赖
 
 ```bash
-ni -D tailwindcss postcss autoprefixer @hyoban/tailwind-config
+ni -D tailwindcss postcss autoprefixer @hyoban/tailwind-config @iconify-json/lucide @iconify-json/simple-icons @iconify-json/mdi
 npx tailwindcss init --ts
 ```
 
-### 加载配置
+## 加载配置
 
 ```js
 // tailwind.config.ts
@@ -30,7 +16,7 @@ import config from "@hyoban/tailwind-config"
 export default config
 ```
 
-### 引入样式文件
+## 引入样式文件
 
 ```js
 import "@hyoban/tailwind-config/globals.css"
@@ -39,5 +25,4 @@ import "@hyoban/tailwind-config/globals.css"
 ## 配置详情
 
 1. 基于 [shandcn ui](https://ui.shadcn.com/docs/installation/manual#configure-tailwindconfigjs) 的 tailwind css 配置
-1. 预置 [tailwindcss icons](https://github.com/egoist/tailwindcss-icons) 插件和 lucide、mdi、simple-icons 图标库
-1. 预置 [tailwindcss typography](https://tailwindcss.com/docs/typography-plugin) 插件
+1. 预置 [tailwindcss icons](https://github.com/egoist/tailwindcss-icons) 和 [tailwindcss typography](https://tailwindcss.com/docs/typography-plugin) 插件
