@@ -88,6 +88,15 @@ importers:
       '@hyoban/tsconfig':
         specifier: workspace:^
         version: link:../../packages/tsconfig
+      '@iconify-json/lucide':
+        specifier: ^1.1.129
+        version: 1.1.129
+      '@iconify-json/mdi':
+        specifier: ^1.1.54
+        version: 1.1.54
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.72
+        version: 1.1.72
       '@types/node':
         specifier: ^20.6.3
         version: 20.6.5
@@ -152,6 +161,15 @@ importers:
       '@hyoban/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@iconify-json/lucide':
+        specifier: ^1.1.129
+        version: 1.1.129
+      '@iconify-json/mdi':
+        specifier: ^1.1.54
+        version: 1.1.54
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.72
+        version: 1.1.72
       '@types/react':
         specifier: ^18.2.22
         version: 18.2.22
@@ -810,9 +828,26 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
+  /@iconify-json/lucide@1.1.129:
+    resolution: {integrity: sha512-9ZuduUDII55iQNpWlK78tGmoW5kp4iD/6EGtVMiSbR5dNdyLpw4X9CGp30aeVIvp4GLPmw2Vf87ZjPcA4qtenw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.54:
+    resolution: {integrity: sha512-3QAsxte90EalbN2e8J30OqSSZz9qN2x+kmykQwsPahoW2dOtSvj+BR9YdiUd9A5XKk2nuU4UH5Gj/cq6WZ6CzQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/simple-icons@1.1.72:
+    resolution: {integrity: sha512-ylH9Q9CE61fcj8ZTeNeydC3wk8gEaoArUbkTdEpIHx4TRqr9ryhQ1XYMffuz1o636NWX/QhtR0sgpZHDjQg6WQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils@2.1.10:
     resolution: {integrity: sha512-0/+5hxjzCZ9RoYpqxnOzbnpQyMdZRuHcMxPJeuX+x/aZkAAD/N4TajDjAPT7LpX+M0bfLExj/p0bbDkUfp0lrg==}
