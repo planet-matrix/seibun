@@ -1,6 +1,6 @@
-import * as fs from "node:fs"
 import gitignore from "eslint-config-flat-gitignore"
 import type { FlatESLintConfigItem } from "eslint-define-config"
+import * as fs from "node:fs"
 
 import {
   next,
@@ -18,9 +18,16 @@ export function hyoban() {
   const isUsingNext = isPackageExists("next")
   const isUsingFastRefresh = isUsingReact && isUsingVite && !isUsingNext
 
+  const isGitignoreExists = isFileExists(".gitignore")
+  const isEslintignoreExists = isFileExists(".eslintignore")
+  const ignoreFiles = [
+    ...(isGitignoreExists ? [".gitignore"] : []),
+    ...(isEslintignoreExists ? [".eslintignore"] : []),
+  ]
+
   const configs: FlatESLintConfigItem[] = [
     gitignore({
-      files: [".gitignore", ".eslintignore"],
+      files: ignoreFiles,
     }),
     ...typescript(),
     ...(isUsingTailwind ? tailwind() : []),
@@ -30,6 +37,15 @@ export function hyoban() {
     ...prettier,
   ]
   return configs
+}
+
+function isFileExists(path: string): boolean {
+  try {
+    fs.statSync(path)
+    return true
+  } catch (error) {
+    return false
+  }
 }
 
 function isPackageExists(pkg: string): boolean {
