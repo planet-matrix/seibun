@@ -1,3 +1,6 @@
 {
-  "extends": "@planet-matrix/tsconfig"
+  "extends": "@planet-matrix/tsconfig",
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"]
+  }
 }
