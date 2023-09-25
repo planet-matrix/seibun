@@ -33,9 +33,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "peerDependencies": {
-    "tailwindcss": ">= 3",
-    "@iconify-json/lucide": "*",
-    "@iconify-json/mdi": "*",
-    "@iconify-json/simple-icons": "*"
+    "tailwindcss": ">= 3"
   }
 }

@@ -280,15 +280,6 @@ importers:
       '@egoist/tailwindcss-icons':
         specifier: ^1.2.0
         version: 1.2.0(tailwindcss@3.3.3)
-      '@iconify-json/lucide':
-        specifier: '*'
-        version: 1.1.129
-      '@iconify-json/mdi':
-        specifier: '*'
-        version: 1.1.54
-      '@iconify-json/simple-icons':
-        specifier: '*'
-        version: 1.1.72
       '@tailwindcss/typography':
         specifier: ^0.5.10
         version: 0.5.10(tailwindcss@3.3.3)
@@ -818,24 +809,6 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
-
-  /@iconify-json/lucide@1.1.129:
-    resolution: {integrity: sha512-9ZuduUDII55iQNpWlK78tGmoW5kp4iD/6EGtVMiSbR5dNdyLpw4X9CGp30aeVIvp4GLPmw2Vf87ZjPcA4qtenw==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: false
-
-  /@iconify-json/mdi@1.1.54:
-    resolution: {integrity: sha512-3QAsxte90EalbN2e8J30OqSSZz9qN2x+kmykQwsPahoW2dOtSvj+BR9YdiUd9A5XKk2nuU4UH5Gj/cq6WZ6CzQ==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: false
-
-  /@iconify-json/simple-icons@1.1.72:
-    resolution: {integrity: sha512-ylH9Q9CE61fcj8ZTeNeydC3wk8gEaoArUbkTdEpIHx4TRqr9ryhQ1XYMffuz1o636NWX/QhtR0sgpZHDjQg6WQ==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
