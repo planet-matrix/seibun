@@ -29,7 +29,8 @@
       "hyoban",
       "clsx",
       "tailwindcss",
-      "astro"
+      "astro",
+      "iconify"
     ]
   },
   "pnpm": {
