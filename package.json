@@ -10,8 +10,9 @@
     "format": "prettier --cache --write .",
     "release": "bumpp -r"
   },
-  "prettier": "./packages/prettier-config/prettier.config.js",
+  "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
+    "@planet-matrix/prettier-config": "^0.1.0",
     "@types/node": "^20.6.3",
     "bumpp": "^9.2.0",
     "nx": "16.9.0",

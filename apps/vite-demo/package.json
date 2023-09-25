@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "prettier": "@hyoban/prettier-config",
   "dependencies": {
     "@hyoban/components": "workspace:^",
     "@hyoban/utils": "workspace:^",
@@ -19,7 +18,6 @@
   },
   "devDependencies": {
     "@hyoban/eslint-config": "workspace:*",
-    "@hyoban/prettier-config": "workspace:^",
     "@hyoban/tailwind-config": "workspace:*",
     "@hyoban/tsconfig": "workspace:*",
     "@types/react": "^18.2.22",

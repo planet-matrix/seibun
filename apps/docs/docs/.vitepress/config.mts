@@ -6,7 +6,6 @@ export default defineConfig({
   lang: "zh-CN",
   themeConfig: {
     sidebar: [
-      { text: "Prettier", link: "/prettier" },
       { text: "Tailwind CSS", link: "/tailwindcss" },
       { text: "ESLint", link: "/eslint" },
       { text: "TS Config", link: "/tsconfig" },
