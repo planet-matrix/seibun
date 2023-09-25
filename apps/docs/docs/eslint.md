@@ -8,12 +8,6 @@ ni -D eslint @hyoban/eslint-config
 
 ## 添加配置
 
-::: tip
-需要注意，默认配置中只对 ts 和 tsx 文件进行检查。
-
-如果创建的项目处于 monorepo 中，需要添加正确的 `eslint.workingDirectories` 配置。
-:::
-
 ::: code-group
 
 ```json [package.json]
@@ -38,7 +32,7 @@ export default hyoban()
   },
   "eslint.validate": ["typescript", "typescriptreact"],
 
-  // optional
+  // optional, if you are using monorepo
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" }

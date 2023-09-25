@@ -13,12 +13,11 @@
   "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
     "@planet-matrix/prettier-config": "^0.1.0",
-    "@types/node": "^20.6.3",
+    "@types/node": "^20.6.5",
     "bumpp": "^9.2.0",
     "nx": "16.9.0",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",
-    "taze": "^0.11.2",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
@@ -30,7 +29,8 @@
       "clsx",
       "tailwindcss",
       "astro",
-      "iconify"
+      "iconify",
+      "vitepress"
     ]
   },
   "pnpm": {
