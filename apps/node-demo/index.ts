@@ -1,2 +1,1 @@
-console.log("Hello, world!")
-const str: String = "foo"
+import type { A } from "./a"

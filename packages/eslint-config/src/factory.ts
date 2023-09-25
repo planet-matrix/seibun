@@ -3,6 +3,7 @@ import type { FlatESLintConfigItem } from "eslint-define-config"
 import * as fs from "node:fs"
 
 import {
+  importExport,
   next,
   prettier,
   react,
@@ -30,6 +31,7 @@ export function hyoban() {
       files: ignoreFiles,
     }),
     ...typescript(),
+    ...importExport(),
     ...(isUsingTailwind ? tailwind() : []),
     ...(isUsingReact ? react() : []),
     ...(isUsingFastRefresh ? reactRefresh() : []),
