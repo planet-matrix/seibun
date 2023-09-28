@@ -9,6 +9,7 @@ import {
   reactRefresh,
   tailwind,
   typescript,
+  ignores,
 } from "./configs"
 
 export function hyoban() {
@@ -18,17 +19,20 @@ export function hyoban() {
   const isUsingNext = isPackageExists("next")
   const isUsingFastRefresh = isUsingReact && isUsingVite && !isUsingNext
 
-  const isGitignoreExists = isFileExists(".gitignore")
-  const isEslintignoreExists = isFileExists(".eslintignore")
+  const isGitignoreExists = fs.existsSync(".gitignore")
+  const isEslintignoreExists = fs.existsSync(".eslintignore")
   const ignoreFiles = [
     ...(isGitignoreExists ? [".gitignore"] : []),
     ...(isEslintignoreExists ? [".eslintignore"] : []),
   ]
 
   const configs: FlatESLintConfigItem[] = [
-    gitignore({
-      files: ignoreFiles,
-    }),
+    ignoreFiles.length > 0
+      ? gitignore({
+          files: ignoreFiles,
+        })
+      : {},
+    ...ignores(),
     ...typescript(),
     ...(isUsingTailwind ? tailwind() : []),
     ...(isUsingReact ? react() : []),
@@ -37,15 +41,6 @@ export function hyoban() {
     ...prettier,
   ]
   return configs
-}
-
-function isFileExists(path: string): boolean {
-  try {
-    fs.statSync(path)
-    return true
-  } catch (error) {
-    return false
-  }
 }
 
 function isPackageExists(pkg: string): boolean {
