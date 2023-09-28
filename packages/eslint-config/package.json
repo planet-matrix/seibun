@@ -18,9 +18,9 @@
     "dev": "npm run build -- --watch src"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.5.2",
-    "@typescript-eslint/eslint-plugin": "6.7.2",
-    "@typescript-eslint/parser": "6.7.2",
+    "@next/eslint-plugin-next": "^13.5.3",
+    "@typescript-eslint/eslint-plugin": "6.7.3",
+    "@typescript-eslint/parser": "6.7.3",
     "eslint-config-flat-gitignore": "^0.1.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
