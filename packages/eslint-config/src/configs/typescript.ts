@@ -4,9 +4,11 @@ import type { FlatESLintConfigItem } from "eslint-define-config"
 import { GLOB_TS, GLOB_TSX } from "../globs"
 import { parserTs, pluginTs } from "../plugins"
 
+/**
+ * @see https://eslint.org/docs/latest/rules/
+ * @see https://typescript-eslint.io/rules/
+ */
 export function typescript(): FlatESLintConfigItem[] {
-  const tsconfigRootDir = process.cwd()
-
   return [
     {
       files: [GLOB_TS, GLOB_TSX],
@@ -14,7 +16,8 @@ export function typescript(): FlatESLintConfigItem[] {
         parser: parserTs,
         parserOptions: {
           project: true,
-          tsconfigRootDir,
+          tsconfigRootDir: process.cwd(),
+          sourceType: "module",
         },
       },
       plugins: {
