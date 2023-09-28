@@ -7,7 +7,6 @@ export default defineConfig({
   themeConfig: {
     sidebar: [
       { text: "Tailwind CSS", link: "/tailwindcss" },
-      { text: "ESLint", link: "/eslint" },
       { text: "Components", link: "/components" },
     ],
     socialLinks: [

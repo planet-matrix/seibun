@@ -1,3 +1,3 @@
-import hyoban from "@hyoban/eslint-config"
+import planetMatrix from "@planet-matrix/eslint-config"
 
-export default hyoban()
+export default planetMatrix()

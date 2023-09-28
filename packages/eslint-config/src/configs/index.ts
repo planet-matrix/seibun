@@ -1,7 +1,0 @@
-export * from "./ignores"
-export * from "./next"
-export * from "./prettier"
-export * from "./react"
-export * from "./react-refresh"
-export * from "./tailwind"
-export * from "./typescript"
