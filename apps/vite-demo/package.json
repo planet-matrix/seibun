@@ -23,7 +23,7 @@
     "@iconify-json/mdi": "^1.1.54",
     "@iconify-json/simple-icons": "^1.1.72",
     "@planet-matrix/tsconfig": "^0.1.1",
-    "@types/react": "^18.2.23",
+    "@types/react": "^18.2.24",
     "@types/react-dom": "^18.2.8",
     "@vitejs/plugin-react-swc": "^3.4.0",
     "autoprefixer": "^10.4.16",
