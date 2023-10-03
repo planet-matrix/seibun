@@ -89,8 +89,8 @@ importers:
         specifier: ^1.1.72
         version: 1.1.72
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.2
-        version: 0.1.2(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.7
+        version: 0.1.7(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -122,8 +122,8 @@ importers:
   apps/node-demo:
     devDependencies:
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.2
-        version: 0.1.2(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.7
+        version: 0.1.7(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -162,8 +162,8 @@ importers:
         specifier: ^1.1.72
         version: 1.1.72
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.2
-        version: 0.1.2(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.7
+        version: 0.1.7(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -1190,8 +1190,8 @@ packages:
     dev: true
     optional: true
 
-  /@planet-matrix/eslint-config@0.1.2(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-8F8x0+NkHoosijTL7ZhpQAL4Lu2iMnchbGGv8zcrvystlpieBesNGQ3FcrERTNJlZE4WBrjfnbaycf7w+Fa/BA==}
+  /@planet-matrix/eslint-config@0.1.7(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-z2HDt+xUB/eP9PFQmsMDEq7buohjzIn3fAeo673Vn56+gAELywPETM9BVtYU0ABTkIXwFSpxzLkEXShPDOPgkQ==}
     peerDependencies:
       eslint: '>= 8'
       typescript: '>= 5'

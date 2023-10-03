@@ -18,7 +18,7 @@
     "react-tweet": "^3.1.1"
   },
   "devDependencies": {
-    "@planet-matrix/eslint-config": "^0.1.2",
+    "@planet-matrix/eslint-config": "^0.1.7",
     "@hyoban/tailwind-config": "workspace:^",
     "@iconify-json/lucide": "^1.1.130",
     "@iconify-json/mdi": "^1.1.54",
