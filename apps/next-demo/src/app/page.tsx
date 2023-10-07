@@ -1,6 +1,6 @@
-import { Tweet } from "react-tweet"
 import { AppearanceSwitch } from "@hyoban/components"
 import { cn } from "@hyoban/utils"
+import { Tweet } from "react-tweet"
 
 export default function Home() {
   return (

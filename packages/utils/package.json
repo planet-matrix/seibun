@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@planet-matrix/tsconfig": "^0.1.1",
-    "@types/react": "^18.2.24"
+    "@types/react": "^18.2.25"
   },
   "peerDependencies": {
     "react": "^18.2.0",

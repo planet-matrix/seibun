@@ -1,5 +1,6 @@
-import type { Metadata } from "next"
 import { TailwindIndicator, ThemeProvider } from "@hyoban/components"
+
+import type { Metadata } from "next"
 
 import "@hyoban/tailwind-config/globals.css"
 
