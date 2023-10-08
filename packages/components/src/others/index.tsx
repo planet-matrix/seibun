@@ -1,5 +1,6 @@
 import { cn } from "@hyoban/utils"
 import { useDark } from "@hyoban/utils/hooks"
+import { useEffect, useState } from "react"
 
 /**
  * Credit to [@hooray](https://github.com/hooray)
@@ -115,10 +116,33 @@ const isProduction = import.meta.env?.MODE
   : process.env["NODE_ENV"] === "production"
 
 export function TailwindIndicator() {
+  const [show, setShow] = useState(false)
+  useEffect(() => {
+    let timeout: number | null
+    const handleResize = () => {
+      if (timeout) clearTimeout(timeout)
+      setShow(true)
+      timeout = window.setTimeout(() => {
+        setShow(false)
+      }, 2000)
+    }
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+      if (timeout) clearTimeout(timeout)
+    }
+  }, [])
+
   if (isProduction) return null
 
   return (
-    <div className="fixed bottom-1 left-1 z-50 flex h-6 w-6 items-center justify-center rounded-full bg-gray-800 p-3 font-mono text-xs text-white">
+    <div
+      className={cn(
+        "fixed bottom-1 left-1 z-50 flex h-6 w-6 items-center justify-center rounded-full bg-gray-800 p-3 font-mono text-xs text-white",
+        show ? "flex" : "hidden",
+      )}
+    >
       <div className="block sm:hidden">xs</div>
       <div className="hidden sm:block md:hidden">sm</div>
       <div className="hidden md:block lg:hidden">md</div>
