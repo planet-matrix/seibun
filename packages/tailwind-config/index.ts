@@ -82,7 +82,7 @@ export default {
     tailwindAnimatePlugin,
     iconsPlugin({
       collections: getIconCollections(["mdi", "lucide", "simple-icons"]),
-      scale: 1.5,
+      scale: 1.25,
     }),
   ],
 } satisfies Config
