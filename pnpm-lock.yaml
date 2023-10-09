@@ -200,9 +200,6 @@ importers:
 
   packages/components:
     dependencies:
-      '@hyoban/components':
-        specifier: workspace:*
-        version: 'link:'
       '@hyoban/utils':
         specifier: workspace:*
         version: link:../utils

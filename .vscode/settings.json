@@ -4,7 +4,7 @@
 
   "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true
   },
   "eslint.validate": ["typescript", "typescriptreact"],
   "eslint.workingDirectories": [

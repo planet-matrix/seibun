@@ -23,7 +23,6 @@
     "dev": "npm run build -- --watch src"
   },
   "dependencies": {
-    "@hyoban/utils": "workspace:*",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-select": "^2.0.0",
@@ -41,7 +40,8 @@
     "tailwindcss": "^3.3.3"
   },
   "peerDependencies": {
-    "@hyoban/components": "workspace:*",
+    "@hyoban/utils": "workspace:*",
+    "@hyoban/tailwind-config": "workspace:^",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
