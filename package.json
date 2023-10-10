@@ -1,0 +1,37 @@
+{
+  "name": "@planet-matrix/seibun",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nx run-many --target=build --projects=@planet-matrix/*",
+    "build:docs": "nx run docs:build",
+    "build:next-demo": "nx run next-demo:build",
+    "build:vite-demo": "nx run vite-demo:build",
+    "format": "prettier --cache --write .",
+    "lint": "nx run-many --target=lint -- --fix",
+    "release": "bumpp -r"
+  },
+  "prettier": "@planet-matrix/prettier-config",
+  "devDependencies": {
+    "@planet-matrix/prettier-config": "^0.1.0",
+    "@types/node": "^20.8.4",
+    "bumpp": "^9.2.0",
+    "nx": "16.10.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "cspell": {
+    "words": [
+      "lucide",
+      "hyoban",
+      "clsx",
+      "tailwindcss",
+      "astro",
+      "iconify",
+      "vitepress"
+    ]
+  }
+}

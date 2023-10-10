@@ -1,0 +1,36 @@
+{
+  "name": "next-demo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint .",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@planet-matrix/components": "workspace:^",
+    "@planet-matrix/utils": "workspace:^",
+    "next": "13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-tweet": "^3.1.1"
+  },
+  "devDependencies": {
+    "@planet-matrix/tailwind-preset": "workspace:^",
+    "@iconify-json/lucide": "^1.1.132",
+    "@iconify-json/mdi": "^1.1.54",
+    "@iconify-json/simple-icons": "^1.1.74",
+    "@planet-matrix/eslint-config": "^0.1.14",
+    "@planet-matrix/tsconfig": "^0.1.1",
+    "@types/node": "^20.8.4",
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}

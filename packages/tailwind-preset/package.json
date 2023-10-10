@@ -1,0 +1,27 @@
+{
+  "name": "@planet-matrix/tailwind-preset",
+  "version": "0.0.0",
+  "description": "Planet Matrix's tailwind preset",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planet-matrix/seibun",
+    "directory": "packages/tailwind-preset"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./index.css": "./index.css"
+  },
+  "files": [
+    "index.js",
+    "index.css"
+  ],
+  "dependencies": {
+    "@egoist/tailwindcss-icons": "^1.3.3",
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">= 3"
+  }
+}

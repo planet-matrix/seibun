@@ -1,0 +1,11 @@
+{
+  "extends": "@planet-matrix/tsconfig",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  }
+}
