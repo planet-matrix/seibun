@@ -14,7 +14,7 @@
   "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
     "@planet-matrix/prettier-config": "^0.1.0",
-    "@types/node": "^20.8.3",
+    "@types/node": "^20.8.4",
     "bumpp": "^9.2.0",
     "nx": "16.10.0",
     "prettier": "^3.0.3",
