@@ -1,1 +1,4 @@
-module.exports = require("@planet-matrix/tailwind-preset")
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  presets: [require("@planet-matrix/tailwind-preset")],
+}
