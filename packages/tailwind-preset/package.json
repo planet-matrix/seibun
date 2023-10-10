@@ -1,6 +1,6 @@
 {
   "name": "@planet-matrix/tailwind-preset",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Planet Matrix's tailwind preset",
   "repository": {
     "type": "git",
