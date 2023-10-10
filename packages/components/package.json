@@ -38,7 +38,7 @@
   "devDependencies": {
     "@hyoban/tailwind-config": "workspace:^",
     "@planet-matrix/tsconfig": "^0.1.1",
-    "@types/react": "^18.2.25",
+    "@types/react": "^18.2.27",
     "@types/react-dom": "^18.2.12",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
