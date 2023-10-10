@@ -89,8 +89,8 @@ importers:
         specifier: ^1.1.74
         version: 1.1.74
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.8
-        version: 0.1.8(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.14
+        version: 0.1.14(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -122,8 +122,8 @@ importers:
   apps/node-demo:
     devDependencies:
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.8
-        version: 0.1.8(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.14
+        version: 0.1.14(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -162,8 +162,8 @@ importers:
         specifier: ^1.1.74
         version: 1.1.74
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.8
-        version: 0.1.8(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.14
+        version: 0.1.14(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -1244,8 +1244,8 @@ packages:
     dev: true
     optional: true
 
-  /@planet-matrix/eslint-config@0.1.8(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-zuFGSaFFlstIOW5NXFp04Anaymz3GdDVWWcwuqRAT32nSowjvIGMp8Q76JGtqLN47aKwe5+Gz7THArFTwyajQQ==}
+  /@planet-matrix/eslint-config@0.1.14(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-qQZikWm7D0CntQIGDrnSC62oQD4xCKCmk6OiULDGsZm8Wt4XsvbwhNHPJF/QMKgUM/yNGSfS6sxJ9bti2RCJig==}
     peerDependencies:
       eslint: '>= 8'
       typescript: '>= 5'
@@ -1257,11 +1257,13 @@ packages:
       eslint-config-flat-gitignore: 0.1.0
       eslint-config-prettier: 9.0.0(eslint@8.51.0)
       eslint-plugin-i: 2.28.1(@typescript-eslint/parser@6.7.4)(eslint@8.51.0)
+      eslint-plugin-jsonc: 2.10.0(eslint@8.51.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@8.51.0)
       eslint-plugin-react: 7.33.2(eslint@8.51.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.51.0)
       eslint-plugin-react-refresh: 0.4.3(eslint@8.51.0)
       eslint-plugin-tailwindcss: 3.13.0(tailwindcss@3.3.3)
+      jsonc-eslint-parser: 2.3.0
       typescript: 5.2.2
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
@@ -3038,6 +3040,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /eslint-compat-utils@0.1.2(eslint@8.51.0):
+    resolution: {integrity: sha512-Jia4JDldWnFNIru1Ehx1H5s9/yxiRHY/TimCuUc0jNexew3cF1gI6CYZil1ociakfWO3rRqFjl1mskBblB3RYg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      eslint: 8.51.0
+    dev: true
+
   /eslint-config-flat-gitignore@0.1.0:
     resolution: {integrity: sha512-5nQMQFRkkhCb+ejFhKSATn/41I7ot9oRcnEDzfqwMlBE9036qM9ioYBDtKLpwmlICXr/J7naMFfb39pa4v4sGA==}
     dependencies:
@@ -3113,6 +3124,19 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    dev: true
+
+  /eslint-plugin-jsonc@2.10.0(eslint@8.51.0):
+    resolution: {integrity: sha512-9d//o6Jyh4s1RxC9fNSt1+MMaFN2ruFdXPG9XZcb/mR2KkfjADYiNL/hbU6W0Cyxfg3tS/XSFuhl5LgtMD8hmw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.51.0)
+      eslint: 8.51.0
+      eslint-compat-utils: 0.1.2(eslint@8.51.0)
+      jsonc-eslint-parser: 2.3.0
+      natural-compare: 1.4.0
     dev: true
 
   /eslint-plugin-jsx-a11y@6.7.1(eslint@8.51.0):
@@ -3747,6 +3771,16 @@ packages:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
+    dev: true
+
+  /jsonc-eslint-parser@2.3.0:
+    resolution: {integrity: sha512-9xZPKVYp9DxnM3sd1yAsh/d59iIaswDkai8oTxbursfKYbg/ibjX0IzFt35+VZ8iEW453TVTXztnRvYUQlAfUQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      acorn: 8.10.0
+      eslint-visitor-keys: 3.4.3
+      espree: 9.6.1
+      semver: 7.5.4
     dev: true
 
   /jsonc-parser@3.2.0:
