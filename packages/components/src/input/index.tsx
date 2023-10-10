@@ -21,8 +21,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       )
     } else {
       return (
-        <div className="relative w-full">
-          <Input className={cn("pl-9", className)} ref={ref} {...props} />
+        <div className={cn("relative w-full", className)}>
+          <Input className="pl-9" ref={ref} {...props} />
           <span
             className={cn(
               "text-muted-foreground absolute inset-0 top-1/2 -translate-y-1/2 left-2",
