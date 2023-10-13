@@ -1,5 +1,5 @@
 import tailwindAnimatePlugin from "tailwindcss-animate"
-import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons"
+import { iconsPlugin } from "@egoist/tailwindcss-icons"
 import tailwindTypographyPlugin from "@tailwindcss/typography"
 
 /** @type {import('tailwindcss').Config} */
@@ -81,7 +81,6 @@ module.exports = {
     tailwindTypographyPlugin,
     tailwindAnimatePlugin,
     iconsPlugin({
-      collections: getIconCollections(["mdi", "lucide", "simple-icons"]),
       scale: 1.25,
     }),
   ],

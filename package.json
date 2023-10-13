@@ -10,7 +10,7 @@
   "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
     "@planet-matrix/prettier-config": "^0.1.0",
-    "@types/node": "^20.8.4",
+    "@types/node": "^20.8.5",
     "bumpp": "^9.2.0",
     "prettier": "^3.0.3",
     "tsup": "^7.2.0",

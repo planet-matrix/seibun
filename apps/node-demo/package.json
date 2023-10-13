@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@planet-matrix/eslint-config": "^0.1.14",
+    "@planet-matrix/eslint-config": "^0.1.15",
     "@planet-matrix/tsconfig": "^0.1.1",
     "eslint": "^8.51.0",
     "typescript": "^5.2.2"
