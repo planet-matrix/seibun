@@ -97,21 +97,6 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  apps/node-demo:
-    devDependencies:
-      '@planet-matrix/eslint-config':
-        specifier: ^0.1.18
-        version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
-      '@planet-matrix/tsconfig':
-        specifier: ^0.1.1
-        version: 0.1.1
-      eslint:
-        specifier: ^8.51.0
-        version: 8.51.0
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-
   apps/vite-demo:
     dependencies:
       '@planet-matrix/components':
@@ -995,9 +980,9 @@ packages:
     dependencies:
       '@babel/core': 7.23.2
       '@babel/generator': 7.23.0
-      '@babel/parser': 7.22.16
+      '@babel/parser': 7.23.0
       '@babel/traverse': 7.23.2
-      '@babel/types': 7.22.19
+      '@babel/types': 7.23.0
       prettier: 3.0.3
       semver: 7.5.4
     transitivePeerDependencies:
