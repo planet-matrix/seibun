@@ -64,8 +64,8 @@ importers:
         specifier: ^1.1.74
         version: 1.1.74
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.15
-        version: 0.1.15(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.18
+        version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tailwind-preset':
         specifier: workspace:^
         version: link:../../packages/tailwind-preset
@@ -100,8 +100,8 @@ importers:
   apps/node-demo:
     devDependencies:
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.15
-        version: 0.1.15(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.18
+        version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tsconfig':
         specifier: ^0.1.1
         version: 0.1.1
@@ -137,8 +137,8 @@ importers:
         specifier: ^1.1.74
         version: 1.1.74
       '@planet-matrix/eslint-config':
-        specifier: ^0.1.15
-        version: 0.1.15(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+        specifier: ^0.1.18
+        version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
       '@planet-matrix/tailwind-preset':
         specifier: workspace:*
         version: link:../../packages/tailwind-preset
@@ -995,17 +995,8 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@nolyfill/has@1.0.21:
-    resolution: {integrity: sha512-Sf8iFaegjGp29hQVQjIc+nDR0uWqGkHsFC3jsUigFwGjpafgMaBtL++DpTU9jYAKDJEvslR1szl8qJjNGlhgcw==}
-    engines: {node: '>=12.4.0'}
-    dependencies:
-      '@nolyfill/shared': 1.0.21
-
-  /@nolyfill/shared@1.0.21:
-    resolution: {integrity: sha512-qDc/NoaFU23E0hhiDPeUrvWzTXIPE+RbvRQtRWSeHHNmCIgYI9HS1jKzNYNJxv4jvZ/1VmM3L6rNVxbj+LBMNA==}
-
-  /@planet-matrix/eslint-config@0.1.15(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-NjfSMFmo3eCPzmmmbowuuw9yrNwQ3sgEVVfYREbhAqeE2mZSWHcW3cei29GxyNvlYmkprfzXnAxByuM0dvLHPQ==}
+  /@planet-matrix/eslint-config@0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-yCIlqu2wjmYMEG0vfxJMk1CGBqTWqVan/O6PId2jRK1sIU8b3v93WShUIaS8fKevo+YFG1DWjLkuCTYiVydYAA==}
     peerDependencies:
       eslint: '>= 8'
       typescript: '>= 5'
@@ -1014,7 +1005,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.7.5(eslint@8.51.0)(typescript@5.2.2)
       eslint: 8.51.0
-      eslint-config-flat-gitignore: 0.1.0
+      eslint-config-flat-gitignore: 0.1.1
       eslint-config-prettier: 9.0.0(eslint@8.51.0)
       eslint-plugin-i: 2.28.1(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)
       eslint-plugin-jsonc: 2.10.0(eslint@8.51.0)
@@ -2830,8 +2821,8 @@ packages:
       eslint: 8.51.0
     dev: true
 
-  /eslint-config-flat-gitignore@0.1.0:
-    resolution: {integrity: sha512-5nQMQFRkkhCb+ejFhKSATn/41I7ot9oRcnEDzfqwMlBE9036qM9ioYBDtKLpwmlICXr/J7naMFfb39pa4v4sGA==}
+  /eslint-config-flat-gitignore@0.1.1:
+    resolution: {integrity: sha512-ysq0QpN63+uaxE67U0g0HeCweIpv8Ztp7yvm0nYiM2TBalRIG6KQLO5J6lAz2gkA8KVis/QsJppe+BR5VigtWQ==}
     dependencies:
       parse-gitignore: 2.0.0
     dev: true
@@ -3383,7 +3374,6 @@ packages:
   /has@1.0.4:
     resolution: {integrity: sha512-qdSAmqLF6209RFj4VVItywPMbm3vWylknmB3nvNiUIs72xAimcM8nVYxYr7ncvZq5qzk9MKIZR8ijqD/1QuYjQ==}
     engines: {node: '>= 0.4.0'}
-    dev: true
 
   /https-proxy-agent@5.0.1:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
@@ -3484,7 +3474,7 @@ packages:
   /is-core-module@2.13.0:
     resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
     dependencies:
-      has: /@nolyfill/has@1.0.21
+      has: 1.0.4
 
   /is-date-object@1.0.5:
     resolution: {integrity: sha512-9YQaSxsAiSwcvS33MBk3wTCVnWK+HhF8VZR2jRxehM16QcVOdHqPn4VPHmRK4lSr38n9JriurInLcP90xsYNfQ==}
