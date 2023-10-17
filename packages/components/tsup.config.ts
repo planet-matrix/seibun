@@ -5,7 +5,6 @@ export default defineConfig({
   external: ["react"],
   dts: true,
   format: ["esm", "cjs"],
-  treeshake: true,
   esbuildOptions(options) {
     options.banner = {
       js: '"use client"',
