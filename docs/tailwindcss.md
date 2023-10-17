@@ -1,25 +1,28 @@
-# Tailwind CSS
+# Tailwind CSS Preset
 
 ## 安装依赖
 
 ```bash
 ni -D tailwindcss postcss autoprefixer @planet-matrix/tailwind-preset @iconify-json/lucide @iconify-json/simple-icons @iconify-json/mdi
-npx tailwindcss init --ts
+npx tailwindcss init --esm
 ```
 
 ## 加载配置
 
 ```js
-// tailwind.config.ts
-import config from "@planet-matrix/tailwind-preset"
+// tailwind.config.js
+import preset from "@planet-matrix/tailwind-preset"
 
-export default config
+/** @type {import('tailwindcss').Config} */
+export default {
+  presets: [preset],
+}
 ```
 
 ## 引入样式文件
 
 ```js
-import "@planet-matrix/tailwind-preset/globals.css"
+import "@planet-matrix/tailwind-preset/index.css"
 ```
 
 ## 配置详情

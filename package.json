@@ -6,7 +6,10 @@
     "dev": "pnpm -r --parallel --filter=@planet-matrix/* run dev",
     "build": "pnpm -r --filter=@planet-matrix/* run build",
     "format": "prettier --cache --write .",
-    "release": "bumpp -r"
+    "release": "bumpp -r",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
@@ -15,7 +18,8 @@
     "@types/node": "^20.8.6",
     "bumpp": "^9.2.0",
     "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitepress": "1.0.0-rc.22"
   },
   "packageManager": "pnpm@8.9.2"
 }

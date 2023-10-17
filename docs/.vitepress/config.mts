@@ -1,8 +1,7 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "Hyoban's Config",
-  description: "Hyoban 开启一个新项目的起手配置",
+  title: "Planet Matrix's Components",
   lang: "zh-CN",
   themeConfig: {
     sidebar: [
