@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 
-import { getEnvironment } from "../utils"
-import { useEffectEvent } from "./utils"
+import { getEnvironment, useEffectEvent } from "./utils"
 
 import type { Dispatch, SetStateAction } from "react"
 

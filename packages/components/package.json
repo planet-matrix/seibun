@@ -13,6 +13,11 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./hooks": {
+      "require": "./dist/hooks/index.cjs",
+      "import": "./dist/hooks/index.js",
+      "types": "./dist/hooks/index.d.ts"
     }
   },
   "main": "./dist/index.cjs",
@@ -23,7 +28,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "npm run build -- --watch src"
+    "build:clean": "rm -rf dist && pnpm run build",
+    "dev": "pnpm run build -- --watch src"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",

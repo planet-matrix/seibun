@@ -11,3 +11,12 @@ export function useEffectEvent<T extends (...args: unknown[]) => unknown>(
     ref.current(...args)
   }, [])
 }
+
+export function getEnvironment() {
+  const isDOM =
+    typeof window !== "undefined" &&
+    window.document &&
+    window.document.documentElement
+
+  return isDOM ? "browser" : "server"
+}

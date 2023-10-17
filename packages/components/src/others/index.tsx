@@ -1,7 +1,7 @@
-import { useDark } from "@planet-matrix/utils/hooks"
 import { useEffect, useState } from "react"
 
 import { cn } from "../"
+import { useDark } from "../hooks"
 
 /**
  * Credit to [@hooray](https://github.com/hooray)

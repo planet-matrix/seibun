@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@planet-matrix/components": "workspace:^",
-    "@planet-matrix/utils": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

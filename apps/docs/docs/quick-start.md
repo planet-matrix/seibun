@@ -3,9 +3,9 @@
 ## Vite
 
 ```tsx filename="app.tsx"
-import { Toaster } from "sonner"
 import { TailwindIndicator } from "@planet-matrix/components"
-import { useDark } from "@planet-matrix/utils/hooks"
+import { useDark } from "planet-matrix/components/hooks"
+import { Toaster } from "sonner"
 
 import { useRoutes } from "~/libs/route"
 
