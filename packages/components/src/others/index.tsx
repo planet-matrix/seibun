@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
-import { cn } from "../"
 import { useDark } from "../hooks"
+import { cn } from "../utils"
 
 /**
  * Credit to [@hooray](https://github.com/hooray)

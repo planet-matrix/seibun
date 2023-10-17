@@ -1,5 +1,5 @@
 import { AppearanceSwitch } from "@planet-matrix/components"
-import { cn } from "planet-matrix/components"
+import { cn } from "@planet-matrix/components/utils"
 import { Tweet } from "react-tweet"
 
 export default function Home() {

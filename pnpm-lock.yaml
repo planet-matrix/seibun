@@ -227,6 +227,9 @@ importers:
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
+      esbuild-react18-useclient:
+        specifier: ^1.0.7
+        version: 1.0.7
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -3014,6 +3017,11 @@ packages:
       is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
+    dev: true
+
+  /esbuild-react18-useclient@1.0.7:
+    resolution: {integrity: sha512-4RITwBZwzt1MDQqt20QUqAhEBiMVjiP4yno74HTMa/bvSwh7q+hgtH/PGkMRwcmUPAI9Nyo72csYN3L7eAKs1g==}
+    deprecated: This package is deprecated in favor of [esbuild-plugin-react18](https://github.com/mayank1513/esbuild-plugin-react18). Please switch to [esbuild-plugin-react18](https://github.com/mayank1513/esbuild-plugin-react18), which also offers additional options and more control over your build output.
     dev: true
 
   /esbuild@0.18.20:
