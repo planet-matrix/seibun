@@ -3,12 +3,14 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
+    "dev": "pnpm -r --parallel --filter=@planet-matrix/* run dev",
     "build": "pnpm -r --filter=@planet-matrix/* run build",
     "format": "prettier --cache --write .",
     "release": "bumpp -r"
   },
   "prettier": "@planet-matrix/prettier-config",
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@planet-matrix/prettier-config": "^0.2.0",
     "@types/node": "^20.8.6",
     "bumpp": "^9.2.0",

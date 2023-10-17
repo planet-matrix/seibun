@@ -2,9 +2,8 @@ import {
   AppearanceSwitch,
   Button,
   Checkbox,
+  CheckboxGroup,
   Input,
-  Separator,
-  TailwindIndicator,
   Select,
   SelectContent,
   SelectGroup,
@@ -12,7 +11,10 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
+  Separator,
+  TailwindIndicator,
 } from "@planet-matrix/components"
+import { useState } from "react"
 
 export function SelectDemo() {
   return (
@@ -35,15 +37,33 @@ export function SelectDemo() {
 }
 
 export function CheckboxDemo() {
+  const [value, setValue] = useState<string[]>([])
+
   return (
-    <div className="flex items-center space-x-2">
-      <Checkbox id="terms2" checked />
-      <label
-        htmlFor="terms2"
-        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-      >
-        Accept terms and conditions
-      </label>
+    <div className="space-y-4">
+      <div className="flex items-center space-x-2">
+        <Checkbox id="terms2" />
+        <label
+          htmlFor="terms2"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          Accept terms and conditions
+        </label>
+      </div>
+      <CheckboxGroup
+        options={[
+          {
+            label: "Apple",
+            value: "apple",
+          },
+          {
+            label: "Banana",
+            value: "banana",
+          },
+        ]}
+        checked={value}
+        onCheckedChange={(value) => setValue(value)}
+      />
     </div>
   )
 }
