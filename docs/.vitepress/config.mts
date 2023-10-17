@@ -17,4 +17,5 @@ export default defineConfig({
     ],
   },
   cleanUrls: true,
+  base: "seibun",
 })
