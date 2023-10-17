@@ -19,6 +19,7 @@ const rscPlugin = {
 export default defineConfig({
   entry: ["src/hooks/index.ts", "src/index.ts", "src/utils/index.ts"],
   dts: true,
-  format: ["esm"],
+  format: ["esm", "cjs"],
+  clean: true,
   esbuildPlugins: [rscPlugin],
 })
