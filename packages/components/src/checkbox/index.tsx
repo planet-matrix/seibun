@@ -1,7 +1,7 @@
-import { cn } from "@planet-matrix/utils"
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox"
 import * as React from "react"
 
+import { cn } from "../"
 import { Label } from "../label"
 
 import type { CheckedState } from "@radix-ui/react-checkbox"

@@ -1,7 +1,7 @@
-import * as React from "react"
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group"
+import * as React from "react"
 
-import { cn } from "@planet-matrix/utils"
+import { cn } from "../"
 
 const RadioGroup = React.forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Root>,

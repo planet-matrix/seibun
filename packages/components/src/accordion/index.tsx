@@ -1,6 +1,7 @@
-import { cn } from "@planet-matrix/utils"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import * as React from "react"
+
+import { cn } from "../"
 
 const Accordion = AccordionPrimitive.Root
 

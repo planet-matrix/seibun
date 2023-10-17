@@ -1,6 +1,7 @@
-import { cn } from "@planet-matrix/utils"
 import * as SwitchPrimitives from "@radix-ui/react-switch"
 import * as React from "react"
+
+import { cn } from "../"
 
 const Switch = React.forwardRef<
   React.ElementRef<typeof SwitchPrimitives.Root>,

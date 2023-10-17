@@ -1,3 +1,8 @@
+import { clsx } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+import type { ClassValue } from "clsx"
+
 export * from "./accordion"
 export * from "./button"
 export * from "./checkbox"
@@ -12,3 +17,7 @@ export * from "./switch"
 export * from "./table"
 export * from "./textarea"
 export * from "./tooltip"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
