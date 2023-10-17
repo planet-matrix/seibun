@@ -1,15 +1,9 @@
-"use client"
-
-import {
-  useCallback,
-  useEffect,
-  useState,
-  type Dispatch,
-  type SetStateAction,
-} from "react"
+import { useCallback, useEffect, useState } from "react"
 
 import { getEnvironment } from "../utils"
 import { useEffectEvent } from "./utils"
+
+import type { Dispatch, SetStateAction } from "react"
 
 export function useLocalStorage<T>(key: string, initialValue: T) {
   if (getEnvironment() === "server") {
