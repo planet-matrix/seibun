@@ -28,21 +28,17 @@ export const Checkbox = React.forwardRef<
 
 Checkbox.displayName = CheckboxPrimitive.Root.displayName
 
-type Merge<P, T> = Omit<P, keyof T> & T
-
-export type CheckboxGroupProps<T extends string | number> = Merge<
-  React.ComponentPropsWithoutRef<"div">,
-  {
-    options: {
-      label: string
-      value: T
-    }[]
-    checked: T[]
-    onCheckedChange: (checked: T[]) => void
-    defaultCheckedAll?: boolean
-    checkAllText?: string
-  }
->
+export type CheckboxGroupProps<T extends string | number> = {
+  options: {
+    label: string
+    value: T
+  }[]
+  checked: T[]
+  onCheckedChange: (checked: T[]) => void
+  defaultCheckedAll?: boolean
+  checkAllText?: string
+  className?: string
+}
 
 export function CheckboxGroup<T extends string | number>(
   props: CheckboxGroupProps<T>,
@@ -54,7 +50,6 @@ export function CheckboxGroup<T extends string | number>(
     className = "",
     defaultCheckedAll = false,
     checkAllText = "Check All",
-    ...rest
   } = props
 
   const allChecked: CheckedState =
@@ -84,10 +79,7 @@ export function CheckboxGroup<T extends string | number>(
   }, [defaultCheckedAll, options.length])
 
   return (
-    <div
-      className={cn("flex items-center flex-wrap gap-2", className)}
-      {...rest}
-    >
+    <div className={cn("flex items-center flex-wrap gap-2", className)}>
       <Checkbox
         checked={allChecked}
         onCheckedChange={handleAllCheckedChange}
