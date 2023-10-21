@@ -1,0 +1,43 @@
+{
+  "name": "@planet-matrix/unocss-preset",
+  "version": "0.1.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planet-matrix/seibun",
+    "directory": "packages/unocss-preset"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "pnpm run build -- --watch src"
+  },
+  "peerDependencies": {
+    "unocss": "^0.56.5"
+  },
+  "dependencies": {
+    "@unocss/preset-mini": "^0.56.5"
+  },
+  "devDependencies": {
+    "@planet-matrix/tsconfig": "^0.1.1",
+    "tsup": "^7.2.0"
+  }
+}
