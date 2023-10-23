@@ -255,8 +255,8 @@ importers:
   packages/unocss-preset:
     dependencies:
       '@unocss/preset-mini':
-        specifier: ^0.56.5
-        version: 0.56.5
+        specifier: ^0.57.0
+        version: 0.57.0
       unocss:
         specifier: ^0.56.5
         version: 0.56.5(postcss@8.4.31)(vite@4.4.11)
@@ -2247,7 +2247,7 @@ packages:
       colorette: 2.0.20
       consola: 3.2.3
       fast-glob: 3.3.1
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       pathe: 1.1.1
       perfect-debounce: 1.0.0
     transitivePeerDependencies:
@@ -2263,10 +2263,20 @@ packages:
   /@unocss/core@0.56.5:
     resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
 
+  /@unocss/core@0.57.0:
+    resolution: {integrity: sha512-vjLnE3PnbFQY0du8jC1hZorFNFlVBBeqo7AoO+69Jqx7aJx3gtBlg4QQV607LIJgU+hsul3RUy8r/pKb7y1MoA==}
+    dev: false
+
   /@unocss/extractor-arbitrary-variants@0.56.5:
     resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
     dependencies:
       '@unocss/core': 0.56.5
+
+  /@unocss/extractor-arbitrary-variants@0.57.0:
+    resolution: {integrity: sha512-nWuC6dAkyeaGmw6C73uS6f6Y97ZrOanhVE0kEB0RZdnJlNoSSPZr+g11RBkR4Ccnh7wun5a+oP/TcKGS7YYVVA==}
+    dependencies:
+      '@unocss/core': 0.57.0
+    dev: false
 
   /@unocss/inspector@0.56.5:
     resolution: {integrity: sha512-UK/X2JyqxB1uueIFlffFsBioxMptanBbJYjrmOoLPdAFoOPp9o8IIFkFs3OKWc8imvyl3w+F0opncmdJnDMllw==}
@@ -2286,7 +2296,7 @@ packages:
       '@unocss/rule-utils': 0.56.5
       css-tree: 2.3.1
       fast-glob: 3.3.1
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       postcss: 8.4.31
 
   /@unocss/preset-attributify@0.56.5:
@@ -2309,6 +2319,14 @@ packages:
       '@unocss/core': 0.56.5
       '@unocss/extractor-arbitrary-variants': 0.56.5
       '@unocss/rule-utils': 0.56.5
+
+  /@unocss/preset-mini@0.57.0:
+    resolution: {integrity: sha512-ka49Y9VVAmshWnZaRDQqykRDcqNzM4LTW6+7g0M/OlOwzVcpSq7xu7IhKv6wpM8M+SHWBFyrK4xTQHxU46m3dA==}
+    dependencies:
+      '@unocss/core': 0.57.0
+      '@unocss/extractor-arbitrary-variants': 0.57.0
+      '@unocss/rule-utils': 0.57.0
+    dev: false
 
   /@unocss/preset-tagify@0.56.5:
     resolution: {integrity: sha512-ANtI7E92fuzF40MD/3V72myNqrcGNXAD3TjXHIxAPQP2F+DcYIl2TBPHVsGUt2Rc5Kid2kvvsWan6sRAQVGPng==}
@@ -2350,6 +2368,14 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.56.5
+
+  /@unocss/rule-utils@0.57.0:
+    resolution: {integrity: sha512-pmM0mZidqyrzaVKXfIfe4ZFXS6XqdjYzsF2NMrFpPzQJRk3/rquuAh42PjeG98MW55um3WS9CGe6SGeko8nOWA==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.57.0
+      magic-string: 0.30.5
+    dev: false
 
   /@unocss/scope@0.56.5:
     resolution: {integrity: sha512-q2eHYLuqF7RZEVGti205X2JOKSH6lBJGoQIjPtWgodNTg3S7qmUinHG0XzikI30L3EF3VljIh5TbtwGPcvbNsA==}
@@ -2395,7 +2421,7 @@ packages:
       '@unocss/transformer-directives': 0.56.5
       chokidar: 3.5.3
       fast-glob: 3.3.1
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       vite: 4.4.11(@types/node@20.8.6)
     transitivePeerDependencies:
       - rollup
@@ -2437,7 +2463,7 @@ packages:
       '@vue/reactivity-transform': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       postcss: 8.4.31
       source-map-js: 1.0.2
     dev: true
@@ -2460,7 +2486,7 @@ packages:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.3
+      magic-string: 0.30.5
     dev: true
 
   /@vue/reactivity@3.3.4:
@@ -4324,8 +4350,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /magic-string@0.30.3:
-    resolution: {integrity: sha512-B7xGbll2fG/VjP+SWg4sX3JynwIU0mjoTc6MPpKNuIvftk6u6vqhDnk1R80b8C2GBR6ywqy+1DcKBrevBg+bmw==}
+  /magic-string@0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
