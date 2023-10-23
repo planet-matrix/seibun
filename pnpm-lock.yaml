@@ -55,8 +55,8 @@ importers:
         specifier: ^1.1.54
         version: 1.1.54
       '@iconify-json/simple-icons':
-        specifier: ^1.1.75
-        version: 1.1.75
+        specifier: ^1.1.76
+        version: 1.1.76
       '@planet-matrix/eslint-config':
         specifier: ^0.1.18
         version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
@@ -113,8 +113,8 @@ importers:
         specifier: ^1.1.54
         version: 1.1.54
       '@iconify-json/simple-icons':
-        specifier: ^1.1.75
-        version: 1.1.75
+        specifier: ^1.1.76
+        version: 1.1.76
       '@planet-matrix/eslint-config':
         specifier: ^0.1.18
         version: 0.1.18(eslint@8.51.0)(tailwindcss@3.3.3)(typescript@5.2.2)
@@ -960,8 +960,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/simple-icons@1.1.75:
-    resolution: {integrity: sha512-oGVandyvqMtBb7iq33Lx5YnH0SBkCE6LwpWPM0vjsIRSwXYpw5fxsSs3jfyikOr4Fwr8G24GjSsb53AC+lgGBQ==}
+  /@iconify-json/simple-icons@1.1.76:
+    resolution: {integrity: sha512-jZEMvkMfD5tTadFJIOIxKE4cTVXslrktWEiMJV6HaABi9qw02zS7bzrllR1YtGPxzniKkq2UVg/dKS6lliIxVA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
