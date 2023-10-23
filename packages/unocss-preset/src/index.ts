@@ -2,7 +2,10 @@ import { h, variantGetParameter } from "@unocss/preset-mini/utils"
 import { presetIcons, presetTypography, presetUno } from "unocss"
 
 import type { Preset, VariantContext, VariantObject } from "unocss"
+import type { IconsOptions } from "unocss/preset-icons"
 import type { Theme } from "unocss/preset-mini"
+import type { TypographyOptions } from "unocss/preset-typography"
+import type { PresetUnoOptions } from "unocss/preset-uno"
 
 const variantGroupDataAttribute: VariantObject = {
   name: "group-data",
@@ -179,16 +182,19 @@ function presetShadcn(): Preset<Theme> {
   }
 }
 
-export function presetPlanetMatrix(): Preset<Theme> {
+export function presetPlanetMatrix(
+  options: PresetUnoOptions & IconsOptions & TypographyOptions,
+): Preset<Theme> {
   return {
     name: "unocss-preset-planet-matrix",
     presets: [
-      presetUno(),
+      presetUno(options),
       presetIcons({
         scale: 1.2,
+        ...options,
       }),
       presetShadcn(),
-      presetTypography(),
+      presetTypography(options),
     ],
     preflights: [
       {
