@@ -1,6 +1,6 @@
 {
   "name": "@planet-matrix/seibun",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "scripts": {
     "dev": "pnpm -r --parallel --filter=@planet-matrix/* run dev",
