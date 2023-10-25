@@ -221,6 +221,9 @@ importers:
       '@planet-matrix/tailwind-preset':
         specifier: workspace:^
         version: link:../tailwind-preset
+      '@planet-matrix/unocss-preset':
+        specifier: workspace:^
+        version: link:../unocss-preset
       '@types/react':
         specifier: ^18.2.31
         version: 18.2.31
@@ -236,6 +239,9 @@ importers:
       tailwindcss:
         specifier: ^3.3.4
         version: 3.3.4
+      unocss:
+        specifier: ^0.57.1
+        version: 0.57.1(postcss@8.4.31)(vite@4.5.0)
 
   packages/tailwind-preset:
     dependencies:
@@ -2509,7 +2515,7 @@ packages:
     resolution: {integrity: sha512-pmM0mZidqyrzaVKXfIfe4ZFXS6XqdjYzsF2NMrFpPzQJRk3/rquuAh42PjeG98MW55um3WS9CGe6SGeko8nOWA==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/core': 0.57.0
+      '@unocss/core': 0.57.1
       magic-string: 0.30.5
     dev: false
 

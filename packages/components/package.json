@@ -65,11 +65,13 @@
   },
   "devDependencies": {
     "@planet-matrix/tailwind-preset": "workspace:^",
+    "@planet-matrix/unocss-preset": "workspace:^",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.4"
+    "tailwindcss": "^3.3.4",
+    "unocss": "^0.57.1"
   },
   "peerDependencies": {
     "@hookform/resolvers": "^3.3.1",

@@ -178,6 +178,18 @@ function presetShadcn(): Preset<Theme> {
         /^slide-out-to-right-?(.+)?$/,
         ([, d]) => ({ "--un-exit-translate-x": handleMatchRem(d as string) }),
       ],
+      [
+        /^grid-fit-(\d+)$/,
+        ([, d]) => ({
+          "grid-template-columns": `repeat(auto-fit, minmax(${d}rem,1fr))`,
+        }),
+      ],
+      [
+        /^grid-fill-(\d+)$/,
+        ([, d]) => ({
+          "grid-template-columns": `repeat(auto-fill, minmax(${d}rem,1fr))`,
+        }),
+      ],
     ],
   }
 }
