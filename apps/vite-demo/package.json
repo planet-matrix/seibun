@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@planet-matrix/components": "workspace:^",
-    "@unocss/reset": "^0.57.0",
+    "@unocss/reset": "^0.57.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.1.136",
-    "@iconify-json/mdi": "^1.1.54",
+    "@iconify-json/lucide": "^1.1.137",
+    "@iconify-json/mdi": "^1.1.55",
     "@iconify-json/simple-icons": "^1.1.76",
     "@planet-matrix/eslint-config": "^0.2.4",
     "@planet-matrix/tailwind-preset": "workspace:*",
@@ -31,7 +31,7 @@
     "eslint": "^8.52.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "unocss": "^0.57.0",
+    "unocss": "^0.57.1",
     "vite": "^4.5.0",
     "vite-plugin-inspect": "^0.7.40"
   }

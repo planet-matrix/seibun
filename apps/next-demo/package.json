@@ -17,19 +17,19 @@
     "react-tweet": "^3.1.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.1.136",
-    "@iconify-json/mdi": "^1.1.54",
+    "@iconify-json/lucide": "^1.1.137",
+    "@iconify-json/mdi": "^1.1.55",
     "@iconify-json/simple-icons": "^1.1.76",
     "@planet-matrix/eslint-config": "^0.2.4",
     "@planet-matrix/tailwind-preset": "workspace:^",
     "@planet-matrix/tsconfig": "^0.1.1",
-    "@types/node": "^20.8.7",
+    "@types/node": "^20.8.8",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.52.0",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.3.4",
     "typescript": "^5.2.2"
   }
 }

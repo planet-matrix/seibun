@@ -244,6 +244,15 @@ export function presetPlanetMatrix(
         --ring: 0 0% 83.1%;
       }
 
+      * {
+        border-color: hsl(var(--border));
+      }
+
+      body {
+        color: hsl(var(--foreground));
+        background: hsl(var(--background));
+      }
+
       html,
       body,
       #root {

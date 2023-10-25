@@ -27,17 +27,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "pnpm run build -- --watch src"
+    "build": "tsup"
   },
   "peerDependencies": {
     "unocss": "^0.57.0"
   },
   "dependencies": {
-    "@unocss/preset-mini": "^0.57.0"
-  },
-  "devDependencies": {
-    "@planet-matrix/tsconfig": "^0.1.1",
-    "tsup": "^7.2.0"
+    "@unocss/preset-mini": "^0.57.1"
   }
 }
