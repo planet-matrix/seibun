@@ -16,12 +16,12 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@planet-matrix/prettier-config": "^0.2.2",
     "@planet-matrix/tsconfig": "^0.1.1",
-    "@types/node": "^20.8.8",
+    "@types/node": "^20.8.9",
     "bumpp": "^9.2.0",
     "prettier": "^3.0.3",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitepress": "1.0.0-rc.24"
   },
-  "packageManager": "pnpm@8.9.2"
+  "packageManager": "pnpm@8.10.0"
 }
