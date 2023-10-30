@@ -55,8 +55,8 @@ importers:
         version: 3.1.1(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@iconify-json/lucide':
-        specifier: ^1.1.137
-        version: 1.1.137
+        specifier: ^1.1.138
+        version: 1.1.138
       '@iconify-json/mdi':
         specifier: ^1.1.55
         version: 1.1.55
@@ -113,8 +113,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@iconify-json/lucide':
-        specifier: ^1.1.137
-        version: 1.1.137
+        specifier: ^1.1.138
+        version: 1.1.138
       '@iconify-json/mdi':
         specifier: ^1.1.55
         version: 1.1.55
@@ -947,8 +947,8 @@ packages:
       - supports-color
     dev: true
 
-  /@iconify-json/lucide@1.1.137:
-    resolution: {integrity: sha512-akfLqZ4CP/NAQKht6nPOg2f1uncGWMAkXFvjI1/IKxF9Hd+6NJAze85zKD5Dt9KkpQtjcO3XWTcOtIZ0r33dkA==}
+  /@iconify-json/lucide@1.1.138:
+    resolution: {integrity: sha512-CTjdE0zxp90omNY+xgFwSYFz1d2wU+aX0evd0pozUw+VyHUJvfgmdSP45KTeZFq6LnzCbDExgUKeeNQAeZJpIA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

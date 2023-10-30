@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.1.137",
+    "@iconify-json/lucide": "^1.1.138",
     "@iconify-json/mdi": "^1.1.55",
     "@iconify-json/simple-icons": "^1.1.76",
     "@planet-matrix/eslint-config": "^0.2.4",
